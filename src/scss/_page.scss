@@ -17,48 +17,60 @@
     background-color: $secondary-text-colour;
   }
 
-  &--light-text-colour {
-    background-color: $light-text-coloir;
+  &--disabled-text-colour {
+    background-color: $disabled-text-colour;
   }
 
-  &--link-one-colour {
-    background-color: $link-one;
+  &--dark-bg-text-colour {
+    background-color: $dark-bg-text-colour;
   }
 
-  &--link-two-colour {
-    background-color: $link-two;
+  &--link-colour {
+    background-color: $link-colour;
   }
 
-  &--link-three-colour {
-    background-color: $link-three;
+  &--light-link-colour {
+    background-color: $light-link-colour;
   }
 
-  &--link-four-colour {
-    background-color: $link-four;
+  &--link-hover-colour {
+    background-color: $link-hover-colour;
   }
 
-  &--button-text-colour {
-    background-color: $button-text;
+  &--link-hover-colour-two {
+    background-color: $link-hover-colour-two;
   }
 
   &--colour-one {
-    background-color: $east-bay;
+    background-color: $downy;
   }
 
   &--colour-two {
-    background-color: $tradewind;
+    background-color: $alabaster;
   }
 
   &--colour-three {
-    background-color: $mandy;
+    background-color: $jordy-blue;
   }
 
   &--colour-four {
-    background-color: $mona-lisa;
+    background-color: $cranberry;
   }
 
   &--colour-five {
-    background-color: $vanilla;
+    background-color: $perano;
+  }
+
+  &--colour-six {
+    background-color: $blush;
+  }
+
+  &--colour-seven {
+    background-color: $hawkes-blue;
+  }
+
+  &--colour-eight {
+    background-color: $pink;
   }
 }
 /* --------------------------------- */
@@ -97,6 +109,7 @@ section {
 
 .nav__item {
   display: inline-block;
+  margin: 0 0.25rem;
 }
 
 nav {
@@ -129,11 +142,11 @@ nav {
 }
 
 .contrast-bg {
-  background-color: $mine-shaft;
+  background-color: $black;
   width: 100%;
 }
 .content {
-  background-color: $wild-sand;
+  background-color: $mercury;
 }
 
 .page-title {
