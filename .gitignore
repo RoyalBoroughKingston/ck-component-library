@@ -1,0 +1,8 @@
+.sass-cache/
+*.css.map
+*.log
+node_modules/*
+.env
+.DS_STORE
+.idea
+dist

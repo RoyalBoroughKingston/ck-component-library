@@ -1,0 +1,62 @@
+/*
+ * Footer
+ * —
+ *
+ */
+ .footer {
+  background-color: $mine-shaft;
+  padding: space(48);
+  color: $white;
+
+  @include bp-md {
+    padding: space(112);
+  }
+
+  &__heading {
+    padding-bottom: space(16);
+  }
+
+  &__description {
+    color: $white;
+    padding-bottom: space(40);
+
+    @include bp-sm {
+      padding-bottom: space(72);
+    }
+  }
+
+  &__title {
+    padding-bottom: space(16);
+    text-align: left;
+
+    @include bp-sm {
+      padding-bottom: space(32);
+    }
+
+    &--second-row {
+      padding-top: space(40);
+    }
+  }
+ 
+  &__contact {
+    color: $white;
+  }
+ 
+  &__icons{
+    padding-top: space(40);
+  }
+
+  &__img {
+    display: none;
+    width: auto;
+    height: auto;
+    @include bp-md {
+      display: block;
+      width: 280px;
+    }
+  }
+
+  &__bottom {
+    padding-top: space(64);
+  }
+} 

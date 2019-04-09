@@ -1,0 +1,41 @@
+{
+  "name": "ck-component-library",
+  "version": "1.0.0",
+  "description": "Component library for the CK frontend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "ngrok": "ngrok http 3000 -host-header='localhost:3000'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoyalBoroughKingston/ck-component-library.git"
+  },
+  "author": "Elliot Morris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoyalBoroughKingston/ck-component-library/issues"
+  },
+  "homepage": "https://github.com/RoyalBoroughKingston/ck-component-library#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "laravel-mix": "^4.0.15",
+    "posthtml": "^0.11.3",
+    "posthtml-include": "^1.2.0",
+    "posthtml-loader": "^1.0.1",
+    "resolve-url-loader": "^2.3.2",
+    "sass": "^1.17.3",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "@ayup-digital/flexigrid": "^1.0.5",
+    "laravel-mix-purgecss": "^4.1.0",
+    "mix-html-builder": "^0.2.0",
+    "sanitize.css": "^8.0.0"
+  }
+}

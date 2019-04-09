@@ -1,0 +1,189 @@
+// Style for library
+
+/* Colours for colour section */
+.colour-block {
+  width: 100%;
+  color: $white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--text-colour {
+    background-color: $text-colour;
+  }
+
+  &--secondary-text-colour {
+    background-color: $secondary-text-colour;
+  }
+
+  &--light-text-colour {
+    background-color: $light-text-coloir;
+  }
+
+  &--link-one-colour {
+    background-color: $link-one;
+  }
+
+  &--link-two-colour {
+    background-color: $link-two;
+  }
+
+  &--link-three-colour {
+    background-color: $link-three;
+  }
+
+  &--link-four-colour {
+    background-color: $link-four;
+  }
+
+  &--button-text-colour {
+    background-color: $button-text;
+  }
+
+  &--colour-one {
+    background-color: $east-bay;
+  }
+
+  &--colour-two {
+    background-color: $tradewind;
+  }
+
+  &--colour-three {
+    background-color: $mandy;
+  }
+
+  &--colour-four {
+    background-color: $mona-lisa;
+  }
+
+  &--colour-five {
+    background-color: $vanilla;
+  }
+}
+/* --------------------------------- */
+
+section {
+  padding-top: 100px;
+  margin-top: -40px;
+}
+
+.title {
+  text-align: center;
+}
+
+.section__title {
+  text-align: left;
+  font-size: 2rem;
+  margin: 0.75rem 0;
+  padding: 0.5rem;
+}
+
+.section__subtitle {
+  text-align: left;
+  background-color: #d8d8d8;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+.section__modifier {
+  text-align: left;
+  background-color: darken($color: #d8d8d8, $amount: 10%);
+  font-size: 1rem;
+  margin: 1rem 0;
+  padding: 0.25rem;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+nav {
+  ul {
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+}
+.page-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(216, 216, 216, 0.95);
+  z-index: 100;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  i {
+    font-size: 1.5rem;
+  }
+
+  .fix {
+    height: 40px;
+    margin: 0.5rem 1rem;
+  }
+}
+
+.contrast-bg {
+  background-color: $mine-shaft;
+  width: 100%;
+}
+.content {
+  background-color: $wild-sand;
+}
+
+.page-title {
+  font-size: 1.5rem;
+
+  @include bp-md {
+    font-size: 2.5rem;
+  }
+}
+
+details {
+  cursor: pointer;
+  @include body-m;
+  margin: space(16) 0;
+  color: #004b6a;
+  background-color: #fbf9f9;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
+  padding: 0.5em 1%;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid;
+  border-color: #e5e5e5;
+  border-color: rgba(229, 229, 229, 0.5);
+  border-radius: 3px 3px 0 0;
+}
+
+.highlight {
+  background-color: #fcfcfc;
+  border: 1px solid #e6e6e6;
+  border-left-width: 5px;
+  border-radius: 3px 0 0 3px;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  margin: 0.5rem;
+
+  @include bp-md {
+    margin: 1.5rem;
+  }
+
+  pre {
+    overflow-x: auto;
+    padding: 0;
+    white-space: pre;
+    word-wrap: normal;
+  }
+
+  code {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+}

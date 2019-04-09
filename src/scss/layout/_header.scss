@@ -1,0 +1,45 @@
+/*
+ * Header
+ * —
+ *
+ */
+ .header {
+  background-color: $mine-shaft;
+  color: $white;
+  
+  &__content {
+
+    &:nth-child(1) {
+      padding-bottom: space(32);
+      
+      @include bp-sm{
+        padding-bottom: 0;
+      }
+    }
+
+    &--bottom {
+      padding-bottom: space(80);
+ 
+      @include bp-sm {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    @include heading-l;
+    color: $white;
+    text-align: center;
+    padding-bottom: space(20);
+
+    @include bp-md{
+      padding-bottom: space(32);
+    } 
+  }
+ 
+  &__img {
+    width: 100%;
+    text-align: center;
+    padding: space(40);
+  }
+}
