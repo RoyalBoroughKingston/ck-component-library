@@ -1,0 +1,21 @@
+.accordion {
+  margin: 0;
+
+  &--tab {
+    color: $san-juan;
+    background-color: $alabaster;
+    padding: space(24);
+  }
+
+  &__panel {
+    background-color: $alabaster;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  &__content {
+    color: $san-juan;
+    border-radius: 5%;
+    background-color: $white;
+  }
+}
