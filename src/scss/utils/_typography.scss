@@ -7,9 +7,9 @@
  */
 
 /* Font families */
-$font-primary: "Open Sans", sans-serif;
-$font-secondary: "Open Sans", sans-serif;
-$font-tertiary: "Open Sans", sans-serif;
+$font-primary: "Museo-Sans", sans-serif;
+$font-secondary: "Skippy-Sharpie";
+$font-tertiary: "Museo-Sans", sans-serif;
 
 /* Font weights */
 $font-light: 300;
@@ -21,66 +21,38 @@ $font-bold: 700;
 /* Font sizes */
 $font-base: pxtorem(16px);
 
-$font-heading-xl: pxtorem(44px);
-$font-heading-l: pxtorem(36px);
-$font-heading-m: pxtorem(24px);
-$font-heading-s: $font-base;
+$font-heading-xl: pxtorem(36px);
+$font-heading-l: pxtorem(33px);
+$font-heading-m: pxtorem(22px);
+$font-heading-s: pxtorem(18px);
 
 $font-body-l: pxtorem(20px);
 $font-body-m: pxtorem(18px);
 $font-body-s: $font-base;
 $font-body-xs: pxtorem(14px);
+$font-body-alt: pxtorem(30px);
 
 /* Import custom fonts */
 
-/* Greycliff */
+/* Museo-Sans */
 @font-face {
-  font-family: Greycliff;
-  src: url(/assets/fonts/Greycliff-CF-Medium.otf);
+  font-family: Museo-Sans;
+  src: url(/assets/fonts/MuseoSans_500.ttf);
   font-weight: $font-medium;
 }
+
 @font-face {
-  font-family: Greycliff;
-  src: url(/assets/fonts/Greycliff-CF-Demi-Bold.otf);
-  font-weight: $font-semi-bold;
-}
-@font-face {
-  font-family: Greycliff;
-  src: url(/assets/fonts/Greycliff-CF-Bold.otf);
+  font-family: Museo-Sans;
+  src: url(/assets/fonts/MuseoSans_500.ttf);
   font-weight: $font-bold;
 }
 
-/* Apercu */
+/* Skippy Sharpie */
 @font-face {
-  font-family: Apercu;
-  src: url(/assets/fonts/Apercu.otf);
+  font-family: Skippy-Sharpie;
+  src: url(/assets/fonts/SkippySharpieRegular.ttf);
   font-weight: $font-regular;
 }
-@font-face {
-  font-family: Apercu;
-  src: url(/assets/fonts/Apercu-Light.otf);
-  font-weight: $font-light;
-}
-@font-face {
-  font-family: Apercu;
-  src: url(/assets/fonts/Apercu-Medium.otf);
-  font-weight: $font-medium;
-}
-@font-face {
-  font-family: Apercu;
-  src: url(/assets/fonts/Apercu-Bold.otf);
-  font-weight: $font-bold;
-}
-
-/* HK-Serif */
-@font-face {
-  font-family: HK-Serif;
-  src: url(/assets/fonts/HK-Serif.otf);
-  font-weight: $font-regular;
-}
-
-/* Source code pro */
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 
 /* Set base font across all elements */
 html {
@@ -114,93 +86,72 @@ address {
 /* Type mixins */
 @mixin heading-xl {
   font-size: $font-heading-xl;
-  font-family: Greycliff;
+  font-family: $font-primary;
   font-weight: $font-bold;
   line-height: 1.2;
 }
 
 @mixin heading-l {
   font-size: $font-heading-l;
-  font-family: Greycliff;
+  font-family: $font-primary;
   font-weight: $font-bold;
-  line-height: 1.2;
+  line-height: 1.17;
 }
 
 @mixin heading-m {
   font-size: $font-heading-m;
-  font-family: Greycliff;
+  font-family: $font-primary;
   font-weight: $font-bold;
-  line-height: 1.2;
+  line-height: 1.13;
 }
 
 @mixin heading-s {
   font-size: $font-heading-s;
-  font-family: Greycliff;
-  font-weight: $font-semi-bold;
-  line-height: 1.2;
+  font-family: $font-primary;
+  font-weight: $font-bold;
+  line-height: 1.22;
 }
 
-@mixin body-m-light {
-  font-size: $font-body-m;
-  font-family: Apercu;
-  font-weight: $font-light;
-  line-height: 1.15;
+@mixin heading-s-regular {
+  font-size: $font-heading-s;
+  font-family: $font-primary;
+  font-weight: $font-regular;
+  line-height: 1.22;
+}
+
+@mixin body-l {
+  font-size: $font-body-l;
+  font-family: $font-primary;
+  font-weight: $font-regular;
+  line-height: 1.25;
 }
 
 @mixin body-m {
   font-size: $font-body-m;
-  font-family: Apercu;
+  font-family: $font-primary;
   font-weight: $font-regular;
-  line-height: 1.15;
-}
-
-@mixin body-s-light {
-  font-size: $font-body-s;
-  font-family: Apercu;
-  font-weight: $font-light;
-  line-height: 1.5;
+  line-height: 1.22;
 }
 
 @mixin body-s {
   font-size: $font-body-s;
-  font-family: Apercu;
+  font-family: $font-primary;
   font-weight: $font-regular;
-  line-height: 1.5;
+  line-height: 1.25;
+}
+
+@mixin body-xs {
+  font-size: $font-body-xs;
+  font-family: $font-primary;
+  font-weight: $font-regular;
+  line-height: 1.14;
 }
 
 @mixin body-alt {
-  font-size: $font-body-l;
-  font-family: HK-Serif;
+  font-size: $font-body-alt;
+  font-family: $font-secondary;
   font-weight: $font-regular;
-  line-height: 1.3;
-}
-
-@mixin section-titles {
-  font-size: $font-body-s;
-  font-family: Apercu;
-  font-weight: $font-bold;
-  line-height: 1.2;
-  letter-spacing: 5.5px;
-  text-transform: uppercase;
-}
-
-@mixin caption {
-  font-size: $font-body-s;
-  font-family: Apercu;
-  font-weight: $font-regular;
-  line-height: 1.15;
-}
-
-@mixin list {
-  font-size: $font-body-s;
-  font-family: Greycliff;
-  font-weight: $font-semi-bold;
-  line-height: 1.2;
-  padding: space(8) 0 0 space(8);
-}
-
-@mixin code {
-  font-family: Source-Code-Pro;
+  line-height: 1;
 }
 
 /* Type colours */
@@ -243,72 +194,28 @@ a {
 }
 
 p {
-  @include body-s;
+  @include body-m;
   color: $text-colour;
 }
 
-// TODO: Change colours once added.
 .body {
+  &--l {
+    @include body-l;
+  }
+
   &--m {
     @include body-m;
   }
 
-  &--light {
-    @include body-s-light;
+  &--s {
+    @include body-s;
+  }
 
-    &--m {
-      @include body-m-light;
-    }
+  &--xs {
+    @include body-xs;
   }
 
   &--alt {
-    @include body-alt();
-  }
-
-  &--section {
-    @include section-titles;
-  }
-
-  &--caption {
-    @include caption;
-    color: $secondary-text-colour;
-  }
-}
-
-/* Lists */
-li {
-  @include list;
-
-  &:nth-child(1) {
-    list-style-image: url(/assets/img/bullets/circle.svg);
-  }
-  &:nth-child(2) {
-    list-style-image: url(/assets/img/bullets/rectangle.svg);
-  }
-  &:nth-child(3) {
-    list-style-image: url(/assets/img/bullets/square.svg);
-  }
-  &:nth-child(4) {
-    list-style-image: url(/assets/img/bullets/triangle.svg);
-  }
-  &:nth-child(5) {
-    list-style-image: url(/assets/img/bullets/semicircle.svg);
-  }
-}
-
-pre {
-  @include code;
-  @include body-s;
-}
-
-code {
-  @include code;
-  @include body-s;
-  background-color: $wild-sand;
-}
-
-.code {
-  &--m {
-    @include body-m;
+    @include body-alt;
   }
 }
