@@ -11,6 +11,7 @@ button,
   border: 3.5px solid $san-juan;
   cursor: pointer;
   display: inline-block;
+  text-decoration: none;
   @include button-hvr;
   @include button-focus;
 
