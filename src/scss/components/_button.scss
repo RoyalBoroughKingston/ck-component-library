@@ -1,23 +1,85 @@
 button,
-.button {
+.btn {
   font-size: $font-button;
-  padding: space(16) space(24);
+  line-height: 1.22;
+  padding: space(8);
   border-radius: 10px;
+  transition: all $animation-speed-fast ease-in-out;
+  box-sizing: border-box;
   background-color: $san-juan;
   color: $white;
   border: 3.5px solid $san-juan;
-  transition: all 0.2s ease-in-out;
-  box-sizing: border-box;
   cursor: pointer;
+  display: inline-block;
   @include button-hvr;
   @include button-focus;
 
+  @include bp-md {
+    padding: space(16);
+  }
+
   &--s {
     font-size: $font-body-m;
-    padding: space(16) space(24);
+    line-height: 1.16;
+    padding: space(16);
   }
 
   &--l {
-    padding: space(24);
+    padding: space(24) space(40);
+  }
+
+  &:disabled {
+    background-color: $mercury;
+    cursor: not-allowed;
+    border: 3.5px solid $mercury;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &--alt {
+    border-radius: 40px;
+    transition: all $animation-speed-fast linear;
+
+    &--m {
+      background-color: $white;
+      color: $san-juan;
+      border: 2px solid $san-juan;
+      @include button-hvr-alt($san-juan);
+    }
+
+    &--s {
+      background-color: $cranberry;
+      color: $white;
+      border: 2px solid $cranberry;
+      padding: space(8) space(16);
+      @include button-hvr-alt($white);
+    }
+
+    &--l {
+      background-color: $san-juan;
+      color: $white;
+      padding: space(24) space(40);
+      @include button-hvr-alt($white);
+    }
+  }
+
+  &--category {
+    background-color: $white;
+    color: $san-juan;
+    border: 2px solid $san-juan;
+    @include button-hvr-alt($san-juan);
+  }
+}
+
+.btn--alt,
+.btn--category {
+  &:disabled,
+  &.btn--category--disabled {
+    background-color: $white;
+    cursor: not-allowed;
+    border: 2px solid $mercury;
+    color: $downy;
   }
 }
