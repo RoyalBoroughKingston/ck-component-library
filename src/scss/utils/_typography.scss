@@ -220,3 +220,22 @@ p {
     @include body-alt;
   }
 }
+
+ul {
+  list-style: none;
+
+  li {
+    @include body-l;
+    font-weight: $font-bold;
+    color: $san-juan;
+
+    &:before {
+      color: $lynch;
+      content: "\2022";
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}
