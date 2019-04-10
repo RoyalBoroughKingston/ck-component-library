@@ -1,0 +1,26 @@
+input {
+  padding: space(16) 0 space(16) space(16);
+  width: 100%;
+  border: 2px solid $san-juan;
+  color: $san-juan;
+  @include outline;
+
+  @include bp-md {
+    padding: space(16);
+  }
+
+  &:placeholder {
+    color: $downy;
+  }
+
+  /* Change cancel button */
+  &::-webkit-search-cancel-button {
+    position: relative;
+    right: 20px;
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: red;
+  }
+}
