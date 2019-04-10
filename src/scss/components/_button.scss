@@ -37,7 +37,7 @@ button,
       box-shadow: none;
     }
   }
-
+  /* Alt */
   &--alt {
     border-radius: 40px;
     transition: all $animation-speed-fast linear;
@@ -46,7 +46,7 @@ button,
       background-color: $white;
       color: $san-juan;
       border: 2px solid $san-juan;
-      @include button-hvr-alt($san-juan);
+      @include button-hvr-alt($san-juan, 4px);
     }
 
     &--s {
@@ -54,32 +54,57 @@ button,
       color: $white;
       border: 2px solid $cranberry;
       padding: space(8) space(16);
-      @include button-hvr-alt($white);
+      @include button-hvr-alt($white, 4px);
     }
 
     &--l {
       background-color: $san-juan;
       color: $white;
       padding: space(24) space(40);
-      @include button-hvr-alt($white);
+      @include button-hvr-alt($white, 4px);
     }
   }
-
+  /* Category */
   &--category {
     background-color: $white;
     color: $san-juan;
     border: 2px solid $san-juan;
-    @include button-hvr-alt($san-juan);
+    @include button-hvr-alt($san-juan, 4px);
+  }
+
+  /* Header options nav */
+  &--header {
+    background-color: $white;
+    font-size: $font-body-xs;
+    color: $san-juan;
+    border: 1px solid $san-juan;
+    padding: space(8) space(16);
+    @include button-hvr-alt($san-juan, 2px);
+    @include button-hvr;
+    border-radius: 0 0 10px 10px;
+
+    @include bp-md {
+      font-size: $font-body-m;
+    }
+
+    &:active,
+    :focus {
+      box-shadow: none;
+      border: 2px solid $downy;
+    }
   }
 }
 
 .btn--alt,
-.btn--category {
+.btn--category,
+.btn--header {
   &:disabled,
-  &.btn--category--disabled {
+  &.btn--category--disabled,
+  &.btn--header--disabled {
     background-color: $white;
     cursor: not-allowed;
     border: 2px solid $mercury;
+    box-shadow: none;
     color: $downy;
   }
 }
