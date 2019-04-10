@@ -4,3 +4,29 @@
  * CSS3 keyframe animations
  *
  */
+
+/*
+  * Button hover
+  * -
+  *
+  */
+@mixin button-hvr {
+  &:hover {
+    box-shadow: 0 2px 10px 0 rgba(56, 56, 56, 0.5);
+  }
+}
+
+/*
+  * Button focus
+  * -
+  *
+  */
+@mixin button-focus {
+  &:focus,
+  &:active {
+    box-shadow: none;
+    border-color: $downy;
+    outline: 0;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,23 @@
+button,
+.button {
+  font-size: $font-button;
+  padding: space(16) space(24);
+  border-radius: 10px;
+  background-color: $san-juan;
+  color: $white;
+  border: 3.5px solid $san-juan;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  cursor: pointer;
+  @include button-hvr;
+  @include button-focus;
+
+  &--s {
+    font-size: $font-body-m;
+    padding: space(16) space(24);
+  }
+
+  &--l {
+    padding: space(24);
+  }
+}
