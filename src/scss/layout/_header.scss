@@ -3,3 +3,96 @@
  * —
  *
  */
+.search {
+  background: url(../../assets/img/svg/backgrounds/home-white-shape-mobile.svg)
+    no-repeat;
+  background-size: 130% 95%;
+  background-position: 50%;
+  padding: space(80) space(32);
+
+  @include bp-sm {
+    background: url(../../assets/img/svg/backgrounds/home-white-shape-tablet.png)
+      no-repeat;
+    background-size: 130% 90%;
+    background-position: 50%;
+  }
+
+  @include bp-lg {
+    background: url(../../assets/img/svg/backgrounds/home-search-shape.svg)
+      no-repeat;
+    background-size: 100% 100%;
+    background-position: 50%;
+    padding: space(80) space(72);
+  }
+
+  &__outer {
+    background-color: $puerto-rico;
+
+    @include bp-lg {
+      background-image: url(../../assets/img/svg/backgrounds/home-header-shape.svg);
+      background-color: initial;
+      background-position: 50%;
+      background-size: 110% 140%;
+      padding: space(112);
+      margin: space(32) 0 space(112);
+    }
+
+    @include bp-xl {
+      &:before {
+        content: url(../../assets/img/svg/telephone-boxes-shapes.svg);
+        position: absolute;
+        right: 670px;
+      }
+
+      &:after {
+        content: url(../../assets/img/svg/trees/hawkes-small.svg);
+        position: absolute;
+        bottom: -7653px;
+        left: 895px;
+      }
+    }
+  }
+
+  &__title {
+    padding: space(16) 0 space(32) 0;
+
+    @include bp-lg {
+      padding: space(80) 0 space(32) 0;
+    }
+  }
+
+  &__button {
+    margin: space(32) 0 0 0;
+
+    @include bp-sm {
+      margin: 0 0 0 space(32);
+    }
+  }
+
+  &__subtitle {
+    padding: space(32) 0;
+  }
+
+  &__categories {
+    padding-bottom: space(32);
+
+    display: none;
+    @include bp-md {
+      display: block;
+    }
+  }
+  &__categories-select {
+    display: block;
+
+    @include bp-md {
+      display: none;
+    }
+  }
+  &__category {
+    margin: 0 space(24) space(24) 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
