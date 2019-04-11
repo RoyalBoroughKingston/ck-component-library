@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="744px" height="251px" viewBox="0 0 744 251" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.4657092,13.9689442 C21.0288515,-3.83025869 100.915188,0.451898784 334.404403,0.451898784 C482.627958,0.451898784 613.507688,0.597809036 727.043594,0.88962954 L727.043594,0.889630765 C736.41534,0.913718897 743.999893,8.51778813 743.999898,17.8895659 L744,234 C744.000004,243.388841 736.388848,251.000003 727.000007,251.000007 C727.000005,251.000007 727.000002,251.000007 727,251.000007 L17.0089454,250.999997 C7.62010619,250.999997 0.00894820744,243.388839 0.00894820744,234 C0.00894820744,233.991304 0.00895487923,233.982609 0.0089682228,233.973913 C0.216547601,98.7007655 3.70212791,25.3657759 10.4657092,13.9689442 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---Service" transform="translate(-64.000000, -723.000000)">
+            <g id="Bitmap-+-Bitmap-Copy-+-Bitmap-Copy-Mask" transform="translate(64.000000, 723.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#F8F8F8" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

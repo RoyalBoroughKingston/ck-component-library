@@ -1,0 +1,23 @@
+.search {
+  background: url(../../assets/img/svg/backgrounds/home-search-shape.svg)
+    no-repeat;
+  background-size: 100% 100%;
+  background-position: 50%;
+  padding: 80px 72px;
+
+  &__outer {
+    background-image: url(../../assets/img/svg/backgrounds/home-header-shape.svg);
+    padding: space(112);
+    position: relative;
+    background-position: 50%;
+    margin: 32px 0 72px;
+    background-size: 110% 140%;
+  }
+  &__title {
+    padding: space(80) 0 space(32) 0;
+  }
+
+  &__subtitle {
+    padding: space(32) 0;
+  }
+}
