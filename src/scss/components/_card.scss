@@ -1,14 +1,18 @@
 .card {
   /* Want to card */
   &--want-to {
-    background: $alabaster;
-    border-radius: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    background: $alabaster;
+    border-radius: 25px;
 
     @include bp-sm {
       flex-direction: column;
+    }
+
+    &__img-container {
+      width: 100%;
     }
 
     &__img {
@@ -30,6 +34,7 @@
 
     &__title {
       padding-bottom: space(16);
+      color: $san-juan;
     }
 
     &__description {
@@ -38,6 +43,21 @@
       @include bp-sm {
         display: block;
       }
+    }
+  }
+  /* Who's it for */
+  &--whos-it-for {
+    padding: space(24);
+    background: $alabaster;
+    border-radius: 0;
+
+    @include bp-md {
+      border-radius: 25px;
+    }
+
+    &__title {
+      padding-right: space(24);
+      color: $san-juan;
     }
   }
 }
