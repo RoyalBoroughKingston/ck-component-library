@@ -1,10 +1,43 @@
 .card {
+  /* Want to card */
   &--want-to {
     background: $alabaster;
-    border-radius: 0 0 25px 25px;
-    padding: space(32);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include bp-sm {
+      flex-direction: column;
+    }
+
     &__img {
-      background: url(../../assets/img/want-to.png);
+      border-radius: 0 25px;
+      width: 100%;
+
+      @include bp-sm {
+        border-radius: 0;
+      }
+    }
+
+    &__content {
+      padding: space(16) space(24);
+
+      @include bp-sm {
+        padding: space(24) space(24) space(32) space(24);
+      }
+    }
+
+    &__title {
+      padding-bottom: space(16);
+    }
+
+    &__description {
+      display: none;
+
+      @include bp-sm {
+        display: block;
+      }
     }
   }
 }
