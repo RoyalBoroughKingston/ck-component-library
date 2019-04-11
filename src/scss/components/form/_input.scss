@@ -11,6 +11,7 @@ input {
 
   &:placeholder {
     color: $downy;
+    text-overflow: ellipsis;
   }
 
   /* Change cancel button */
