@@ -3,6 +3,7 @@ a {
   transition: all $animation-speed-fast;
   font-size: inherit;
   font-family: inherit;
+  color: inherit;
 
   &:hover {
     text-decoration: underline;

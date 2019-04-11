@@ -196,7 +196,7 @@ button {
 
 p {
   @include body-m;
-  color: $text-colour;
+  color: inherit;
 }
 
 .body {
