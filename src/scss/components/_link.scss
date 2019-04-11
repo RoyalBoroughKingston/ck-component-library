@@ -10,30 +10,3 @@ a {
     font-weight: $font-bold;
   }
 }
-
-[class*="nav__link"] {
-  &:hover {
-    text-decoration: none;
-  }
-
-  &:after {
-    content: url(../../assets/img/svg/nav-hover.svg);
-    position: relative;
-    top: 20px;
-    right: 0;
-    bottom: 0;
-    left: -70px;
-    width: 97px;
-    height: 53px;
-    opacity: 0;
-    transition: opacity 0.2s ease-out;
-    will-change: opacity;
-    z-index: -1;
-  }
-}
-
-.nav__link--active {
-  &:after {
-    opacity: 1;
-  }
-}
