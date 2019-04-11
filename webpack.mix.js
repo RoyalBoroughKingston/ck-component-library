@@ -18,7 +18,7 @@ mix
   })
   .setPublicPath("dist")
   .copy("src/assets", "dist/assets")
-  .copy("src/templates", "dist/templates")
+  .copy("*.html", "dist/")
   .buildHtml({ inject: false })
   .browserSync({
     proxy: false,

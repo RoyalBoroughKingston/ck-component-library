@@ -17,24 +17,24 @@
 }
 
 [class*="nav--menu"] {
+  position: relative;
+  display: inline-block;
+  margin-right: space(56);
+
   &:hover {
     text-decoration: none;
-
-    &:after {
-      opacity: 0.3;
-    }
   }
-
   &:after {
     content: url(../../assets/img/svg/nav-hover.svg);
-    position: relative;
-    top: 20px;
+    position: absolute;
+    top: -13px;
     right: 0;
     bottom: 0;
-    left: -70px;
+    left: -24px;
     width: 97px;
     height: 53px;
     opacity: 0;
+    -webkit-transition: opacity 0.2s ease-out;
     transition: opacity 0.2s ease-out;
     will-change: opacity;
     z-index: -1;
