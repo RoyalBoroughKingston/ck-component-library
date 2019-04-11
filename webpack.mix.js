@@ -1,7 +1,7 @@
 let mix = require("laravel-mix");
 
 require("mix-html-builder");
-require('laravel-mix-purgecss');
+require("laravel-mix-purgecss");
 
 mix
   .js("src/js/app.js", "dist")
@@ -14,15 +14,14 @@ mix
     },
   })
   .purgeCss({
-    folders: ['src'],
+    folders: ["src"],
   })
   .setPublicPath("dist")
   .copy("src/assets", "dist/assets")
+  .copy("src/templates", "dist/templates")
   .buildHtml({ inject: false })
   .browserSync({
     proxy: false,
-    server: { baseDir: 'dist' },
-    files: [
-      'dist/**/*'
-    ]
+    server: { baseDir: "dist" },
+    files: ["dist/**/*"],
   });
