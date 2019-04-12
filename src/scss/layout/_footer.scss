@@ -30,6 +30,8 @@
   &::after {
     content: url(../../assets/img/svg/bridge-shape.svg);
     position: absolute;
+    bottom: 440px;
+    right: 260px;
   }
 
   &__content {
