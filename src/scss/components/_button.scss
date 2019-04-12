@@ -93,6 +93,10 @@
       @include button-hvr-alt($san-juan, 2px);
       @include button-hvr;
       border-radius: 0 0 10px 10px;
+
+      &:hover {
+        border-top: 1px solid $san-juan;
+      }
     }
 
     &:active,
