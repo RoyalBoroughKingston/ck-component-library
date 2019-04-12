@@ -7,7 +7,9 @@
     background: $alabaster;
     border-radius: 25px;
     margin-bottom: space(16);
-
+    &:hover {
+      box-shadow: 0 2px 10px 0 rgba(56, 56, 56, 0.5);
+    }
     @include bp-sm {
       flex-direction: column;
       margin-bottom: 0;
