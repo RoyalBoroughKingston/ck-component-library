@@ -6,9 +6,11 @@
     align-items: center;
     background: $alabaster;
     border-radius: 25px;
+    margin-bottom: space(16);
 
     @include bp-sm {
       flex-direction: column;
+      margin-bottom: 0;
     }
 
     &__img-container {

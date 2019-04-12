@@ -14,7 +14,7 @@
     <main class="homepage">
       <!--Top navs-->
       <header class="container row">
-        <figure class="header__img-container col-xsmall-10 col-small-7">
+        <figure class="header__img-container col-xsmall-9 col-small-7">
           <a href="/"
             ><img
               class="header__img"
@@ -30,16 +30,18 @@
         </nav>
         <!--Pages nav-->
         <button
+          id="jsHamburger"
           type="button"
-          name="Nav menu mobile"
-          class="col-xsmall-2 header__hamburger"
+          name="nav--hamburger"
+          class="col-xsmall-3 nav--hamburger"
           role="button"
         >
-          <label for="nav-trigger"></label>
+          <label class="nav--hamburger__label" for="nav--hamburger"></label>
           <i class="bars fa fa-bars" aria-hidden="" title="Menu Trigger"></i>
         </button>
+
         <nav
-          class="nav--menu col-xsmall-6 col-xsmall-offset-6 -xsmall-end -no-gutters"
+          class="nav--menu nav--menu--desktop col-xsmall-12 col-medium-offset-6 -medium-end -no-gutters"
         >
           <a href="/" class="nav--menu__item nav--menu__item--active">Home</a
           ><a href="/about-us" class="nav--menu__item nav--menu__item"

@@ -5,15 +5,6 @@
  */
 
 .header {
-  &__hamburger {
-    margin-top: space(16);
-    display: inline-block;
-
-    @include bp-md {
-      display: none;
-    }
-  }
-
   &__img {
     width: 100%;
 
@@ -71,7 +62,7 @@
         position: absolute;
         top: 140px;
         left: 33%;
-        animation: sway 7s infinite;
+        animation: sway 7s infinite §;
         transform-origin: 50% 100% 0;
       }
     }
@@ -93,7 +84,11 @@
       }
     }
   }
-
+  &__form {
+    &--hide {
+      display: none;
+    }
+  }
   &__title {
     padding: space(16) 0 space(32) 0;
 
@@ -122,6 +117,7 @@
       display: block;
     }
   }
+
   &__categories-select {
     display: block;
 
@@ -129,6 +125,7 @@
       display: none;
     }
   }
+
   &__category {
     margin: 0 space(24) space(24) 0;
 
