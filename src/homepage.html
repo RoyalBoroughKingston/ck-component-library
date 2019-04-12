@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <include src="metatags.html"></include>
   <head>
     <link
       rel="stylesheet"
@@ -13,19 +14,33 @@
     <main>
       <!--Top navs-->
       <header class="container row">
-        <div class="header__img col-xsmall-7">
+        <figure class="header__img-container col-xsmall-9 col-small-7">
           <a href="/"
             ><img
+              class="header__img"
               src="./assets/img/logos/ck-logo.svg"
               alt="Connected kingston logo"
           /></a>
-        </div>
-        <nav class="nav--options col-xsmall-5 -xsmall-endx">
+        </figure>
+        <!--Options nav-->
+        <nav class="nav--options col-xsmall-5 -xsmall-end -no-gutters">
           <a class="nav--options__item btn btn--header">Translate</a
           ><a class="nav--options__item btn btn--header">Give feedback</a
           ><a class="nav--options__item btn btn--header">View favourites</a>
         </nav>
-        <nav class="nav--menu col-xsmall-6 col-xsmall-offset-6 -xsmall-end">
+        <!--Pages nav-->
+        <button
+          type="button"
+          name="Nav menu mobile"
+          class="col-xsmall-3 header__hamburger"
+          role="button"
+        >
+          <label for="nav-trigger"></label>
+          <i class="bars fa fa-bars" aria-hidden="" title="Menu Trigger"></i>
+        </button>
+        <nav
+          class="nav--menu col-xsmall-6 col-xsmall-offset-6 -xsmall-end -no-gutters"
+        >
           <a href="/" class="nav--menu__item nav--menu__item--active">Home</a
           ><a href="/about-us" class="nav--menu__item nav--menu__item"
             >About us</a
@@ -38,93 +53,20 @@
         </nav>
       </header>
       <!--Search-->
-      <section class="search__outer">
-        <div class="container">
-          <div class="row">
-            <div class="col-small-12 -no-gutters">
-              <form class="search -no-gutters row -xsmall-middle">
-                <h2 class="search__title col-xsmall-12">I'm looking for</h2>
-                <div class="col-small-9 col-medium-5 -no-gutters">
-                  <input
-                    type="search"
-                    placeholder="Search for services, groups and activities"
-                  />
-                </div>
-                <div
-                  class="col-small-3 -no-gutters -xsmall-last -small-order-none"
-                >
-                  <button class="search__button">Search</button>
-                </div>
-                <h2 class="search__subtitle col-xsmall-12">
-                  Or browse by category
-                </h2>
-                <select class="search__categories-select">
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-                <div class="search__categories">
-                  <div class="row -xsmall-space-between">
-                    <div class="col-xsmall">
-                      <a class="search__category btn btn--s btn--category"
-                        >Mental Health</a
-                      >
-                      <a class="search__category btn btn--s btn--category"
-                        >Learning disability</a
-                      >
-                      <a class="search__category btn btn--s btn--category"
-                        >Living at home</a
-                      >
-                      <a class="search__category btn btn--s btn--category"
-                        >Things to do</a
-                      >
-                      <a class="search__category btn btn--s btn--category"
-                        >Health matters</a
-                      >
-                    </div>
-                  </div>
-                  <div class="row -xsmall-space-between">
-                    <div class="col-xsmall">
-                      <a class="search__category  btn btn--s btn--category"
-                        >Getting around</a
-                      >
-                      <a class="search__category  btn btn--s btn--category"
-                        >Housing and Accommodation</a
-                      >
-                      <a class="search__category  btn btn--s btn--category"
-                        >Money matters</a
-                      >
-                    </div>
-                  </div>
-                  <div class="row -xsmall-space-between">
-                    <div class="col-xsmall">
-                      <a class="search__category  btn btn--s btn--category"
-                        >Work, Education & Volunteering</a
-                      >
-                      <a class="search__category  btn btn--s btn--category"
-                        >Advice and Guidance Services</a
-                      >
-                      <a class="search__category  btn btn--s btn--category"
-                        >Are you looking after someone?</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+      <include src="./header.html"></include>
+      <!--I want to-->
+      <section class="container homepage__want-to">
+        <div class="homepage__want-to__intro">
+          <h1>I want to...</h1>
+          <p class="body--l ">
+            Sometimes it's hard to know where to start - here are some
+            suggestions
+          </p>
         </div>
-      </section>
-      <section class="container">
-        <h1>I want to...</h1>
-        <p class="body--l">
-          Sometimes it's hard to know where to start - here are some suggestions
-        </p>
-        <div class="row">
-          <div class="col-small-3">
+        <div class="row -xsmall-space-between">
+          <div class="col-xsmall-12 col-small-4 col-xlarge-3">
             <article class="card--want-to">
-              <div>
+              <div class="card--want-to__img-container">
                 <img
                   src="./assets/img/want-to.png"
                   class="card--want-to__img"
@@ -139,9 +81,9 @@
               </div>
             </article>
           </div>
-          <div class="col-small-3">
+          <div class="col-xsmall-12 col-small-4 col-xlarge-3">
             <article class="card--want-to">
-              <div>
+              <div class="card--want-to__img-container">
                 <img
                   src="./assets/img/want-to.png"
                   class="card--want-to__img"
@@ -156,9 +98,9 @@
               </div>
             </article>
           </div>
-          <div class="col-small-3">
+          <div class="col-xsmall-12 col-small-4 col-xlarge-3">
             <article class="card--want-to">
-              <div>
+              <div class="card--want-to__img-container">
                 <img
                   src="./assets/img/want-to.png"
                   class="card--want-to__img"

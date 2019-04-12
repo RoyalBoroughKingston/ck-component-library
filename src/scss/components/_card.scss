@@ -35,10 +35,12 @@
     &__title {
       padding-bottom: space(16);
       color: $san-juan;
+      text-align: left;
     }
 
     &__description {
       display: none;
+      text-align: left;
 
       @include bp-sm {
         display: block;

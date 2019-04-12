@@ -32,6 +32,11 @@
     position: absolute;
     bottom: 440px;
     right: 260px;
+
+    @include bp-xl {
+      bottom: 410px;
+      right: 330px;
+    }
   }
 
   &__content {

@@ -1,0 +1,12 @@
+.homepage {
+  &__want-to {
+    color: $san-juan;
+
+    @include bp-md {
+      text-align: center;
+    }
+    &__intro {
+      margin-bottom: space(64);
+    }
+  }
+}

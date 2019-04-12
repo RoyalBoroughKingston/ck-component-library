@@ -4,8 +4,22 @@
  *
  */
 
-.header__img {
-  margin-top: space(16);
+.header {
+  &__hamburger {
+    margin-top: space(16);
+  }
+
+  &__img {
+    width: 100%;
+
+    @include bp-md {
+      width: auto;
+    }
+
+    &-container {
+      margin-top: space(16);
+    }
+  }
 }
 
 .search {
@@ -37,25 +51,40 @@
       background-image: url(../../assets/img/svg/backgrounds/home-header-shape.svg);
       background-color: initial;
       background-position: 50%;
-      background-size: 130% 140%;
+      background-size: 110% 140%;
       margin-top: space(32);
-    }
 
-    @include bp-xl {
       &:before {
         content: url(../../assets/img/svg/telephone-boxes-shapes.svg);
         position: absolute;
-        right: 610px;
-        top: 100px;
+        right: 38%;
+        top: 140px;
       }
 
       &:after {
         content: url(../../assets/img/svg/trees/hawkes-small.svg);
         position: absolute;
-        top: 100px;
-        left: 485px;
+        top: 140px;
+        left: 33%;
         animation: sway 7s infinite;
         transform-origin: 50% 100% 0;
+      }
+    }
+
+    @include bp-xl {
+      background-image: url(../../assets/img/svg/backgrounds/home-header-shape-xl.svg);
+      background-color: initial;
+      background-position: 50%;
+      background-size: 110% 140%;
+
+      &:before {
+        right: 38%;
+        top: 100px;
+      }
+
+      &:after {
+        top: 110px;
+        left: 40%;
       }
     }
   }

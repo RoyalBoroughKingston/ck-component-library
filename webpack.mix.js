@@ -18,8 +18,16 @@ mix
   })
   .setPublicPath("dist")
   .copy("src/assets", "dist/assets")
-  .copy("*.html", "dist/")
-  .buildHtml({ inject: false })
+  .buildHtml({
+    inject: false,
+    htmlRoot: "./src/index.html",
+    output: "./index.html",
+  })
+  .buildHtml({
+    inject: false,
+    htmlRoot: "./src/homepage.html",
+    output: "./homepage.html",
+  })
   .browserSync({
     proxy: false,
     server: { baseDir: "dist" },
