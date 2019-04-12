@@ -42,6 +42,11 @@
 
   &__outer {
     background-color: $hawkes-blue;
+    margin-top: space(32);
+
+    @include bp-md {
+      margin-top: 0;
+    }
 
     @include bp-lg {
       background-image: url(../../assets/img/svg/backgrounds/home-header-shape.svg);

@@ -37,6 +37,11 @@
           content: "Close";
         }
       }
+      .nav--hamburger__icon {
+        &:before {
+          content: "\F00D";
+        }
+      }
     }
 
     @include bp-md {
@@ -61,6 +66,7 @@
   display: block;
   margin: 0 0 space(40) 0;
   font-size: $font-body-l;
+  color: $san-juan;
 
   @include bp-md {
     display: inline-block;
