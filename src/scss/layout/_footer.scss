@@ -62,9 +62,11 @@
     padding-bottom: space(24);
   }
 
-  &__contact {
+  &__contact,
+  &__feedback {
     padding-bottom: space(24);
   }
+
   &__privacy {
     padding-bottom: space(24);
     display: block;
