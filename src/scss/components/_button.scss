@@ -17,6 +17,10 @@
     padding: space(16);
   }
 
+  &__icon {
+    padding-left: space(16);
+  }
+
   &--s {
     font-size: $font-body-m;
     line-height: 1.16;
@@ -75,17 +79,19 @@
 
   /* Header options nav */
   &--header {
-    background-color: $white;
     font-size: $font-body-xs;
     color: $san-juan;
-    border: 1px solid $san-juan;
-    padding: space(8) space(16);
-    @include button-hvr-alt($san-juan, 2px);
-    @include button-hvr;
-    border-radius: 0 0 10px 10px;
+    display: block;
 
     @include bp-md {
+      display: inline-block;
       font-size: $font-body-m;
+      background-color: $white;
+      border: 1px solid $san-juan;
+      padding: space(8) space(16);
+      @include button-hvr-alt($san-juan, 2px);
+      @include button-hvr;
+      border-radius: 0 0 10px 10px;
     }
 
     &:active,

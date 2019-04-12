@@ -6,9 +6,13 @@
 .footer {
   background-color: $san-juan;
   position: relative;
-  padding: 64px 0;
+  padding: space(8) 0;
   margin-top: 160px;
   color: $white;
+
+  @include bp-md {
+    padding: space(64) 0;
+  }
 
   &::before {
     content: "";
@@ -20,18 +24,25 @@
     width: 100%;
     height: 110px;
     position: absolute;
-    top: -106px;
+    top: -56px;
     left: 0;
+
     @include bp-md {
       background-image: url(../../assets/img/svg/backgrounds/footer-shape.svg);
+      top: -106px;
     }
   }
   //TODO: ADD shapes
   &::after {
     content: url(../../assets/img/svg/bridge-shape.svg);
     position: absolute;
-    bottom: 440px;
-    right: 260px;
+    bottom: 560px;
+    right: 0;
+
+    @include bp-md {
+      bottom: 440px;
+      right: 260px;
+    }
 
     @include bp-xl {
       bottom: 410px;

@@ -16,7 +16,9 @@
               />
             </div>
             <div class="col-small-3 -no-gutters -xsmall-last -small-order-none">
-              <button class="btn search__button">Search</button>
+              <button class="btn search__button">
+                Search <i class="btn__icon fas fa-search"></i>
+              </button>
             </div>
             <h2 class="search__subtitle col-xsmall-12">
               Or browse by category
@@ -77,20 +79,25 @@
             </div>
           </form>
           <!--Mobile nav-->
-          <nav
-            id="jsMobileMenu"
-            class="nav--menu nav--menu--mobile col-xsmall-12 col-medium-offset-6 -medium-end -no-gutters"
-          >
-            <a href="/" class="nav--menu__item nav--menu__item--active">Home</a
-            ><a href="/about-us" class="nav--menu__item nav--menu__item"
-              >About us</a
-            ><a href="/contact-us" class="nav--menu__item nav--menu__item"
-              >Contact us</a
-            >
-            <a href="/get-involved" class="nav--menu__item nav--menu__item"
-              >Get involved</a
-            >
-          </nav>
+          <div id="jsMobileMenu" class="nav--mobile">
+            <nav class="nav--menu col-xsmall-12 -no-gutters">
+              <a href="/" class="nav--menu__item nav--menu__item--active"
+                >Home</a
+              ><a href="/about-us" class="nav--menu__item nav--menu__item"
+                >About us</a
+              ><a href="/contact-us" class="nav--menu__item nav--menu__item"
+                >Contact us</a
+              >
+              <a href="/get-involved" class="nav--menu__item nav--menu__item"
+                >Get involved</a
+              >
+            </nav>
+            <nav class="nav--options col-xsmall-12 -no-gutters">
+              <a class="nav--options__item btn--header">Translate</a
+              ><a class="nav--options__item btn--header">Give feedback</a
+              ><a class="nav--options__item btn--header">View favourites</a>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
