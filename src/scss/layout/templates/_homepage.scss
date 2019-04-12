@@ -1,4 +1,10 @@
 .homepage {
+  background-color: $hawkes-blue;
+
+  @include bp-md {
+    background-color: $white;
+  }
+
   &__want-to {
     color: $san-juan;
 

@@ -7,6 +7,11 @@
 .header {
   &__hamburger {
     margin-top: space(16);
+    display: inline-block;
+
+    @include bp-md {
+      display: none;
+    }
   }
 
   &__img {
@@ -45,7 +50,7 @@
   }
 
   &__outer {
-    background-color: $puerto-rico;
+    background-color: $hawkes-blue;
 
     @include bp-lg {
       background-image: url(../../assets/img/svg/backgrounds/home-header-shape.svg);
