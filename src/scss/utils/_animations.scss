@@ -47,3 +47,21 @@ $animation-speed-fast: 0.2s;
     text-decoration: none;
   }
 }
+
+/*
+  * Tree sway
+  * -
+  *
+  */
+@keyframes sway {
+  0%,
+  to {
+    -webkit-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+}
