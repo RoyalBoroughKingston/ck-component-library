@@ -20,12 +20,9 @@
         margin-top: 0;
       }
     }
+
     &__title {
       margin-bottom: space(16);
-
-      @include bp-md {
-        margin-bottom: 0;
-      }
     }
   }
 }

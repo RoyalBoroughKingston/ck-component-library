@@ -25,6 +25,7 @@
 
       @include bp-sm {
         width: 100%;
+        height: auto;
       }
     }
 
@@ -36,6 +37,7 @@
       @include bp-sm {
         border-radius: 25px 25px 0 0;
         width: 100%;
+        height: auto;
       }
     }
 

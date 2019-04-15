@@ -86,3 +86,22 @@
   overflow: hidden;
   position: fixed;
 }
+
+/* 
+ * Skip to content
+ *
+ */
+.skip {
+  display: block;
+  position: absolute;
+  top: -1000%;
+  width: 100%;
+  background-color: $hawkes-blue;
+  padding: space(16);
+
+  &:focus,
+  &:active {
+    position: relative;
+    top: auto;
+  }
+}

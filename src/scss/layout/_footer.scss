@@ -39,14 +39,19 @@
     bottom: 560px;
     right: 0;
 
+    @include bp-sm {
+      bottom: 310px;
+      right: 170px;
+    }
+
     @include bp-md {
-      bottom: 440px;
-      right: 260px;
+      bottom: 480px;
+      right: 100px;
     }
 
     @include bp-xl {
-      bottom: 410px;
-      right: 330px;
+      bottom: 430px;
+      right: 470px;
     }
   }
 
