@@ -27,8 +27,7 @@ $animation-speed-fast: 0.2s;
   */
 @mixin button-hvr-alt($colour, $amount) {
   &:hover {
-    box-shadow: none;
-    border: $amount solid $colour;
+    box-shadow: 0px 0px 0px $amount $colour inset;
     text-decoration: none;
   }
 }

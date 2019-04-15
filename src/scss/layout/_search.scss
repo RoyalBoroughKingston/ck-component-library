@@ -23,11 +23,12 @@
       no-repeat;
     background-size: 110% 100%;
     background-position: 50%;
-    padding: space(80) space(72);
+    padding: space(32) space(112);
   }
 
   @include bp-xl {
     background-size: 100% 100%;
+    padding: space(64) space(112);
   }
 
   &:before {
@@ -35,12 +36,10 @@
       content: url(../../assets/img/svg/trees/iceberg-small.svg);
       position: absolute;
       left: 5%;
-      top: 640px;
-      animation: sway 7s infinite;
-      transform-origin: 50% 100% 0;
+      top: 580px;
     }
     @include bp-xl {
-      left: 0;
+      top: 640px;
     }
   }
 
@@ -49,21 +48,21 @@
       content: url(../../assets/img/svg/trees/hawkes-small.svg);
       position: absolute;
       right: 10%;
-      top: 640px;
-      animation: sway 7s infinite;
-      transform-origin: 50% 100% 0;
+      top: 580px;
     }
     @include bp-xl {
-      right: 5%;
+      top: 640px;
     }
   }
 
   &__outer {
     background-color: $hawkes-blue;
     margin-top: space(32);
+    padding-top: space(16);
 
     @include bp-lg {
       margin-top: 0;
+      padding-top: 0;
     }
 
     @include bp-lg {
@@ -90,25 +89,22 @@
       }
 
       @include bp-xl {
-        right: 38%;
+        right: 37%;
         top: 100px;
       }
     }
 
     &:after {
-      animation: sway 7s infinite;
-      transform-origin: 50% 100% 0;
-      position: absolute;
-
       @include bp-lg {
         content: url(../../assets/img/svg/trees/peurto-small.svg);
+        position: absolute;
         top: 140px;
         left: 33%;
       }
 
       @include bp-xl {
         top: 110px;
-        left: 38%;
+        left: 36%;
       }
     }
 
@@ -118,6 +114,7 @@
       height: 100%;
       z-index: 999;
       overflow: hidden;
+      margin: 0;
     }
   }
 
@@ -127,12 +124,13 @@
         content: url(../../assets/img/svg/trees/cranberry-lg.svg);
         position: absolute;
         right: 5%;
-        top: 640px;
+        top: 580px;
         animation: sway 7s infinite;
         transform-origin: 50% 100% 0;
       }
+
       @include bp-xl {
-        right: 0;
+        top: 640px;
       }
     }
 
@@ -143,6 +141,7 @@
 
   &__title {
     padding: space(16) 0 space(32) 0;
+    color: $san-juan;
 
     @include bp-lg {
       padding: space(80) 0 space(32) 0;
@@ -159,10 +158,11 @@
 
   &__subtitle {
     padding: space(32) 0;
+    color: $san-juan;
   }
 
   &__categories {
-    padding-bottom: space(32);
+    padding-bottom: space(64);
 
     display: none;
     @include bp-md {

@@ -49,7 +49,7 @@
       background-color: $white;
       color: $san-juan;
       border: 2px solid $san-juan;
-      @include button-hvr-alt($san-juan, 4px);
+      @include button-hvr-alt($san-juan, 2px);
     }
 
     &--s {
@@ -57,16 +57,20 @@
       color: $white;
       border: 2px solid $cranberry;
       padding: space(8) space(16);
-      @include button-hvr-alt($white, 4px);
+      @include button-hvr-alt($white, 2px);
     }
 
     &--l {
       background-color: $san-juan;
       border: 2px solid $white;
       color: $white;
-      font-size: $font-body-m;
+      font-size: $font-body-s;
       padding: space(10) space(40);
-      @include button-hvr-alt($white, 4px);
+      @include button-hvr-alt($white, 2px);
+
+      @include bp-md {
+        font-size: $font-body-m;
+      }
     }
   }
   /* Category */
@@ -75,7 +79,7 @@
     color: $san-juan;
     border: 2px solid $san-juan;
     padding: space(10) space(16);
-    @include button-hvr-alt($san-juan, 4px);
+    @include button-hvr-alt($san-juan, 2px);
   }
 
   /* Header options nav */

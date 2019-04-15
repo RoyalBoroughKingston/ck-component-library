@@ -7,12 +7,14 @@
   background-color: $san-juan;
   position: relative;
   padding: space(8) 0;
-  margin-top: 200px;
+  margin-top: 80px;
   color: $white;
 
   @include bp-md {
     padding: space(64) 0;
+    margin-top: 160px;
   }
+
   /* For adding trees only! */
   .container {
     &:before {
@@ -21,8 +23,9 @@
         position: absolute;
         bottom: 485px;
         right: 10%;
-        animation: sway 7s infinite;
-        transform-origin: 50% 100% 0;
+      }
+      @include bp-xl {
+        bottom: 505px;
       }
     }
   }
@@ -37,9 +40,8 @@
     width: 100%;
     height: 110px;
     position: absolute;
-    top: -56px;
     left: 0;
-
+    top: -96px;
     @include bp-md {
       background-image: url(../../assets/img/svg/backgrounds/footer-shape.svg);
       top: -106px;
@@ -47,14 +49,15 @@
   }
 
   &::after {
-    content: url(../../assets/img/svg/bridge-shape.svg);
+    content: url(../../assets/img/svg/bridge-shape-mobile.svg);
     position: absolute;
-    bottom: 560px;
-    right: 0;
+    bottom: 610px;
+    right: 5%;
 
     @include bp-sm {
-      bottom: 310px;
-      right: 170px;
+      content: url(../../assets/img/svg/bridge-shape.svg);
+      bottom: 315px;
+      right: 5%;
     }
 
     @include bp-md {
@@ -63,8 +66,8 @@
     }
 
     @include bp-xl {
-      bottom: 430px;
-      right: 470px;
+      bottom: 435px;
+      right: 25%;
     }
   }
 
@@ -77,8 +80,9 @@
         position: absolute;
         bottom: 465px;
         right: 15%;
-        animation: sway 7s infinite;
-        transform-origin: 50% 100% 0;
+      }
+      @include bp-xl {
+        bottom: 495px;
       }
     }
 
