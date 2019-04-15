@@ -1,0 +1,19 @@
+/*
+ * Search
+ * —
+ *
+ */
+
+.header {
+  &__img {
+    width: 100%;
+
+    @include bp-xl {
+      width: auto;
+    }
+
+    &-container {
+      margin-top: space(16);
+    }
+  }
+}

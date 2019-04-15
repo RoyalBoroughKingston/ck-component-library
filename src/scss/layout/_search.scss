@@ -1,22 +1,8 @@
 /*
- * Header
+ * Search
  * —
  *
  */
-
-.header {
-  &__img {
-    width: 100%;
-
-    @include bp-md {
-      width: auto;
-    }
-
-    &-container {
-      margin-top: space(16);
-    }
-  }
-}
 
 .search {
   background: url(../../assets/img/svg/backgrounds/home-white-shape-mobile.svg)
@@ -40,11 +26,39 @@
     padding: space(80) space(72);
   }
 
+  &:before {
+    @include bp-lg {
+      content: url(../../assets/img/svg/trees/iceberg-small.svg);
+      position: absolute;
+      left: 5%;
+      top: 640px;
+      animation: sway 7s infinite;
+      transform-origin: 50% 100% 0;
+    }
+    @include bp-xl {
+      left: 0;
+    }
+  }
+
+  &:after {
+    @include bp-lg {
+      content: url(../../assets/img/svg/trees/hawkes-small.svg);
+      position: absolute;
+      right: 10%;
+      top: 640px;
+      animation: sway 7s infinite;
+      transform-origin: 50% 100% 0;
+    }
+    @include bp-xl {
+      right: 5%;
+    }
+  }
+
   &__outer {
     background-color: $hawkes-blue;
     margin-top: space(32);
 
-    @include bp-md {
+    @include bp-lg {
       margin-top: 0;
     }
 
@@ -83,14 +97,14 @@
       position: absolute;
 
       @include bp-lg {
-        content: url(../../assets/img/svg/trees/hawkes-small.svg);
+        content: url(../../assets/img/svg/trees/peurto-small.svg);
         top: 140px;
         left: 33%;
       }
 
       @include bp-xl {
         top: 110px;
-        left: 40%;
+        left: 38%;
       }
     }
 
@@ -104,6 +118,20 @@
   }
 
   &__form {
+    &:before {
+      @include bp-lg {
+        content: url(../../assets/img/svg/trees/cranberry-lg.svg);
+        position: absolute;
+        right: 5%;
+        top: 640px;
+        animation: sway 7s infinite;
+        transform-origin: 50% 100% 0;
+      }
+      @include bp-xl {
+        right: 0;
+      }
+    }
+
     &--hide {
       display: none;
     }
