@@ -59,8 +59,8 @@
     @include bp-xl {
       background-image: url(../../assets/img/svg/backgrounds/home-header-shape-xl.svg);
       background-color: initial;
-      background-position: 50%;
-      background-size: 110% 140%;
+      background-position: center;
+      background-size: cover;
     }
 
     &:before {
@@ -93,12 +93,21 @@
         left: 40%;
       }
     }
+    &--menu {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      overflow: hidden;
+    }
   }
+
   &__form {
     &--hide {
       display: none;
     }
   }
+
   &__title {
     padding: space(16) 0 space(32) 0;
 

@@ -68,7 +68,6 @@
  * Outline
  *
  */
-
 @mixin outline {
   outline-color: $downy;
   outline-width: 3px;
@@ -77,4 +76,13 @@
   :active {
     outline-style: solid;
   }
+}
+
+/* 
+ *  Remove scroll 
+ *
+ */
+.noscroll {
+  overflow: hidden;
+  position: fixed;
 }
