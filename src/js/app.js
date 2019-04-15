@@ -5,7 +5,7 @@ const searchOuterSection = document.getElementById("jsSearchOuter");
 const mobileNav = document.getElementById("jsMobileMenu");
 const body = document.getElementById("jsBody");
 
-hamburger.addEventListener("click", function() {
+hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("nav--hamburger--active");
   searchSection.classList.toggle("search__form--hide");
   searchOuterSection.classList.toggle("search__outer--menu");
