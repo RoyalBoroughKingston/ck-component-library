@@ -42,9 +42,12 @@
     position: absolute;
     left: 0;
     top: -96px;
+    background-color: $iceburg;
+
     @include bp-md {
       background-image: url(../../assets/img/svg/backgrounds/footer-shape.svg);
       top: -106px;
+      background-color: $white;
     }
   }
 
