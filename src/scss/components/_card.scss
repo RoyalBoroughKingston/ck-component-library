@@ -8,9 +8,11 @@
       background: $alabaster;
       border-radius: 25px;
       margin-bottom: space(16);
-
+      transition: all $animation-speed-fast;
       &:hover {
         box-shadow: 0 2px 10px 0 rgba(56, 56, 56, 0.5);
+        transform: scale(1.05);
+        text-decoration: none;
       }
 
       @include bp-sm {

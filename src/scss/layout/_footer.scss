@@ -21,11 +21,11 @@
       @include bp-lg {
         content: url(../../assets/img/svg/trees/jordy-lg.svg);
         position: absolute;
-        bottom: 485px;
         right: 10%;
+        top: -32%;
       }
       @include bp-xl {
-        bottom: 505px;
+        top: -25%;
       }
     }
   }
@@ -54,23 +54,30 @@
   &::after {
     content: url(../../assets/img/svg/bridge-shape-mobile.svg);
     position: absolute;
-    bottom: 610px;
-    right: 5%;
+    top: -15%;
+    left: 0;
+    right: 0;
+    text-align: center;
 
     @include bp-sm {
       content: url(../../assets/img/svg/bridge-shape.svg);
       bottom: 315px;
       right: 5%;
+      top: unset;
     }
 
     @include bp-md {
-      bottom: 480px;
-      right: 100px;
+      text-align: unset;
+      left: unset;
+      bottom: 470px;
+      right: 280px;
+      transform: rotate(2deg);
     }
 
     @include bp-xl {
       bottom: 435px;
       right: 25%;
+      transform: rotate(0deg);
     }
   }
 
@@ -81,11 +88,11 @@
       @include bp-lg {
         content: url(../../assets/img/svg/trees/iceberg-small.svg);
         position: absolute;
-        bottom: 465px;
+        top: -25%;
         right: 15%;
       }
       @include bp-xl {
-        bottom: 495px;
+        top: -20%;
       }
     }
 

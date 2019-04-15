@@ -85,7 +85,7 @@
         content: url(../../assets/img/svg/telephone-boxes-shapes.svg);
         position: absolute;
         right: 38%;
-        top: 140px;
+        top: 100px;
       }
 
       @include bp-xl {
@@ -98,13 +98,13 @@
       @include bp-lg {
         content: url(../../assets/img/svg/trees/peurto-small.svg);
         position: absolute;
-        top: 140px;
+        top: 100px;
         left: 33%;
       }
 
       @include bp-xl {
         top: 110px;
-        left: 36%;
+        left: 37%;
       }
     }
 
