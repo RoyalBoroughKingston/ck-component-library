@@ -7,11 +7,24 @@
   background-color: $san-juan;
   position: relative;
   padding: space(8) 0;
-  margin-top: 160px;
+  margin-top: 200px;
   color: $white;
 
   @include bp-md {
     padding: space(64) 0;
+  }
+  /* For adding trees only! */
+  .container {
+    &:before {
+      @include bp-lg {
+        content: url(../../assets/img/svg/trees/jordy-lg.svg);
+        position: absolute;
+        bottom: 485px;
+        right: 10%;
+        animation: sway 7s infinite;
+        transform-origin: 50% 100% 0;
+      }
+    }
   }
 
   &::before {
@@ -32,7 +45,7 @@
       top: -106px;
     }
   }
-  //TODO: ADD shapes
+
   &::after {
     content: url(../../assets/img/svg/bridge-shape.svg);
     position: absolute;
@@ -57,6 +70,28 @@
 
   &__content {
     margin: space(64) 0;
+
+    &:before {
+      @include bp-lg {
+        content: url(../../assets/img/svg/trees/iceberg-small.svg);
+        position: absolute;
+        bottom: 465px;
+        right: 15%;
+        animation: sway 7s infinite;
+        transform-origin: 50% 100% 0;
+      }
+    }
+
+    &:after {
+      @include bp-lg {
+        content: url(../../assets/img/svg/trees/pink-lg.svg);
+        position: absolute;
+        bottom: 545px;
+        left: 10%;
+        animation: sway 7s infinite;
+        transform-origin: 50% 100% 0;
+      }
+    }
   }
 
   &__disclaimer {
