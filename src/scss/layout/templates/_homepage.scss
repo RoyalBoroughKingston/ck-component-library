@@ -7,11 +7,11 @@
 
   &__want-to {
     color: $san-juan;
-    padding-bottom: space(40);
+    padding-bottom: space(96);
 
     @include bp-md {
       text-align: center;
-      
+      padding-bottom: space(40);
     }
 
     &__intro {

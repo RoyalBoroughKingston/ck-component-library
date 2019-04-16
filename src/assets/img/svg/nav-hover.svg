@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="97px" height="53px" viewBox="0 0 97 53" version="1.1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+<svg width="100px" height="65px" viewBox="0 0 100 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
     <title>Path 4 Copy</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="PL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Comic-Relief-HIV-Booking--10.0-Navigations" transform="translate(-1251.000000, -318.000000)" fill="#F8F8F8">
-            <g id="Header" transform="translate(691.000000, 295.000000)">
-                <path d="M603.85032,23.1962427 C587.2243,23.6817021 560,17.3709392 560,49.987689 C560,69.48971 589.810425,76.7762045 605.746911,75.9353022 C614.728869,75.4613614 649.067439,69.990852 654.571607,56.4600173 C668.831383,21.405366 616.159198,22.8368386 603.85032,23.1962427 Z" id="Path-4-Copy"></path>
-            </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---Home" transform="translate(-913.000000, -61.000000)" fill="#D0EFEB">
+            <path d="M958.206515,61.2406751 C941.066289,61.8360497 913,54.0964349 913,94.0981091 C913,118.015682 943.732397,126.951949 960.161764,125.920654 C969.421514,125.339406 1004.8221,118.63029 1010.4965,102.03587 C1025.1973,59.0443168 970.89608,60.7998964 958.206515,61.2406751 Z" id="Path-4-Copy"></path>
         </g>
     </g>
 </svg>

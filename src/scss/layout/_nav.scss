@@ -45,6 +45,7 @@
 
     &__label {
       &:before {
+        color: $san-juan;
         content: "Menu";
         font-size: $font-body-xs;
       }
@@ -53,7 +54,12 @@
     &__menu {
       display: none;
     }
+
+    &__icon{
+      color: $san-juan;
+    }
   }
+
   &--mobile {
     display: none;
     &--active {
@@ -91,12 +97,12 @@
 .nav--menu {
   &__item {
     @include bp-md {
-      margin-right: space(56);
+      margin-right: space(32);
 
       &:after {
         content: url(../../assets/img/svg/nav-hover.svg);
         position: absolute;
-        top: -13px;
+        top: -20px;
         right: 0;
         bottom: 0;
         left: -24px;
@@ -113,6 +119,9 @@
       }
 
       &--active {
+        font-weight: $font-bold;
+        margin-right: space(48);
+
         &:after {
           opacity: 1;
         }
