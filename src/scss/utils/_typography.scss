@@ -101,10 +101,14 @@ address {
 }
 
 @mixin heading-m {
-  font-size: $font-heading-m;
+  font-size: $font-body-s;
   font-family: $font-primary;
   font-weight: $font-bold;
   line-height: 1.13;
+  
+  @include bp-md{
+    font-size: $font-heading-m;
+  }
 }
 
 @mixin heading-s {

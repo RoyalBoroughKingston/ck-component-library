@@ -16,6 +16,7 @@
       no-repeat;
     background-size: 130% 90%;
     background-position: 50%;
+    padding: space(80) space(16);
   }
 
   @include bp-lg {

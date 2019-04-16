@@ -2,12 +2,12 @@
 @import "~sanitize.css";
 @import "./utils/colours";
 @import "./utils/helpers";
+@import "./layout/grid";
 @import "./utils/typography";
 @import "./utils/icons";
 @import "./utils/animations";
 
 /* Layout */
-@import "./layout/grid";
 @import "./layout/search";
 @import "./layout/nav";
 @import "./layout/footer";

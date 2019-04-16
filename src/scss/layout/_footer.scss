@@ -7,8 +7,12 @@
   background-color: $san-juan;
   position: relative;
   padding: space(8) 0;
-  margin-top: 80px;
+  margin-top: 0;
   color: $white;
+
+  @include bp-sm{
+    margin-top: 80px;
+  }
 
   @include bp-md {
     padding: space(64) 0;
@@ -24,6 +28,7 @@
         right: 10%;
         top: -32%;
       }
+
       @include bp-xl {
         top: -25%;
       }
@@ -41,8 +46,12 @@
     height: 110px;
     position: absolute;
     left: 0;
-    top: -96px;
+    top: -4px;
     background-color: $iceburg;
+
+    @include bp-sm{
+      top: -96px;
+    }
 
     @include bp-md {
       background-image: url(../../assets/img/svg/backgrounds/footer-shape.svg);
@@ -54,7 +63,7 @@
   &::after {
     content: url(../../assets/img/svg/bridge-shape-mobile.svg);
     position: absolute;
-    top: -15%;
+    top: 0;
     left: 0;
     right: 0;
     text-align: center;
@@ -62,6 +71,7 @@
     @include bp-sm {
       content: url(../../assets/img/svg/bridge-shape.svg);
       bottom: 315px;
+      top: -15%;
       right: 5%;
       top: unset;
     }
