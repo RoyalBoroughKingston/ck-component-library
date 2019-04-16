@@ -95,6 +95,11 @@
     margin: space(64) 0;
 
     &:before {
+      content: url(../../assets/img/svg/trees/pink-small.svg);
+      position: absolute;
+      top: -5%;
+      right: 2%;
+
       @include bp-lg {
         content: url(../../assets/img/svg/trees/iceberg-small.svg);
         position: absolute;
