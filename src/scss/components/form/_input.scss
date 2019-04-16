@@ -3,6 +3,10 @@ input {
   width: 100%;
   border: 2px solid $san-juan;
   color: $san-juan;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
   @include outline;
 
   @include bp-md {
@@ -11,7 +15,6 @@ input {
 
   &:placeholder {
     color: $downy;
-    text-overflow: ellipsis;
   }
 
   /* Change cancel button */

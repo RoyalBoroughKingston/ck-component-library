@@ -3,7 +3,6 @@
  * —
  *
  */
-
 .search {
   background: url(../../assets/img/svg/backgrounds/home-white-shape-mobile.svg)
     no-repeat;
@@ -33,6 +32,11 @@
   }
 
   &:before {
+    content: url(../../assets/img/svg/telephone-boxes-shapes.svg);
+    position: absolute;
+    right: 5%;
+    bottom: -25px;
+
     @include bp-lg {
       content: url(../../assets/img/svg/trees/iceberg-small.svg);
       position: absolute;
@@ -45,6 +49,11 @@
   }
 
   &:after {
+    content: url(../../assets/img/svg/trees/peurto-small.svg);
+    position: absolute;
+    left: 5%;
+    bottom: -25px;
+
     @include bp-lg {
       content: url(../../assets/img/svg/trees/hawkes-small.svg);
       position: absolute;
@@ -86,6 +95,10 @@
       top: 70px;
       z-index: 1;
 
+      @include bp-sm{
+        top: 120px;
+      }
+
       @include bp-lg {
         content: url(../../assets/img/svg/telephone-boxes-shapes.svg);
         position: absolute;
@@ -105,6 +118,10 @@
       right: 15%;
       top: 70px;
       z-index: 1;
+
+      @include bp-sm{
+        top: 120px;
+      }
 
       @include bp-lg {
         content: url(../../assets/img/svg/trees/peurto-small.svg);
