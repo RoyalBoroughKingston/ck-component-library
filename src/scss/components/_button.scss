@@ -1,7 +1,7 @@
 .btn {
-  font-size: $font-button;
+  font-size: $font-button-s;
   line-height: 1.22;
-  padding: space(8);
+  padding: space(8) space(16);
   border-radius: 10px;
   transition: all $animation-speed-fast ease-in-out;
   box-sizing: border-box;
@@ -14,7 +14,8 @@
   @include button-focus;
 
   @include bp-md {
-    padding: space(16);
+    padding: space(16) space(24);
+    font-size: $font-button;
   }
 
   &__icon {

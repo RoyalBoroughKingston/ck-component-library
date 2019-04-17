@@ -6,11 +6,11 @@ input {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  
   @include outline;
 
   @include bp-md {
     padding: space(16);
+    font-size: $font-body-m;
   }
 
   &:placeholder {

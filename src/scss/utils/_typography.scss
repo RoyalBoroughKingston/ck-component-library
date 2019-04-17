@@ -33,8 +33,11 @@ $font-body-xs: pxtorem(14px);
 $font-body-alt: pxtorem(30px);
 
 $font-button: pxtorem(22px);
+$font-button-s: pxtorem(20px);
 
 /* Import custom fonts */
+
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 
 /* Museo-Sans */
 @font-face {
@@ -87,17 +90,25 @@ address {
 
 /* Type mixins */
 @mixin heading-xl {
-  font-size: $font-heading-xl;
+  font-size: $font-heading-m;
   font-family: $font-primary;
   font-weight: $font-bold;
   line-height: 1.2;
+
+  @include bp-md{
+    font-size: $font-heading-xl;
+  }
 }
 
 @mixin heading-l {
-  font-size: $font-heading-l;
+  font-size: $font-body-l;
   font-family: $font-primary;
   font-weight: $font-bold;
   line-height: 1.17;
+
+  @include bp-md{
+    font-size: $font-heading-l;
+  }
 }
 
 @mixin heading-m {
@@ -126,10 +137,14 @@ address {
 }
 
 @mixin body-l {
-  font-size: $font-body-l;
+  font-size:  $font-body-s;
   font-family: $font-primary;
   font-weight: $font-regular;
   line-height: 1.25;
+
+  @include bp-md{
+    font-size: $font-body-l;
+  }
 }
 
 @mixin body-m {
