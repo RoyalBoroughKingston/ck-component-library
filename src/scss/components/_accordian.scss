@@ -1,21 +1,58 @@
 .accordion {
   margin: 0;
+  color: $san-juan;
+  background-color: $alabaster;
+  padding: space(24);
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 
-  &--tab {
+  &:after{
+    font-family: "Font Awesome 5 Free";
+    content: '\f078';
+    font-weight: 900;
+    font-size: 28px;
     color: $san-juan;
-    background-color: $alabaster;
-    padding: space(24);
+    padding: 0 space(16);
+  }
+
+  &--white {
+    background-color: $white;
+
+    +.accordion__panel{
+      background-color: $white;
+
+      .accordion__content{
+        background-color: $white;
+        box-shadow: 0px 0px 0px 16px $white inset;
+      }
+    }
+  }
+
+  &--active{
+    &:after{
+      content: '\f077';
+    }
   }
 
   &__panel {
     background-color: $alabaster;
     margin: 0;
-    padding: 1rem 0;
+    padding: 0 0 space(16) 0;
+    display: none;
+    overflow: hidden;
   }
 
   &__content {
     color: $san-juan;
     border-radius: 5%;
     background-color: $white;
+    box-shadow: 0px 0px 0px 16px $alabaster inset;
+    padding: space(24);
   }
 }
