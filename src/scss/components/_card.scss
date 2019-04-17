@@ -86,4 +86,77 @@
       color: $san-juan;
     }
   }
+  /* What people say */
+  &--what-people-say{
+    background-image: url(../../assets/img/svg/backgrounds/service-quote-shape-mobile.svg);
+    background-position: center;
+    background-size: contain;
+    color: $san-juan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: space(16) space(24) space(24) space(24);
+
+    @include bp-sm{
+      background-image: url(../../assets/img/svg/backgrounds/service-quote-shape.svg);
+      padding: space(40);
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+
+    &__icon{
+      font-size: 40px;
+      margin-right: space(24);
+      padding-bottom: space(16);
+
+      @include bp-md{
+        padding-bottom: 0;
+      }
+    }
+  }
+  /* Where can i access it card */
+  &--access-it{
+    padding: space(32); 
+    background: $alabaster;
+    border-radius: 15px;
+
+    &__intro{
+      color: $san-juan; 
+      margin-left: space(16);
+    }
+
+    &__title{
+      padding-bottom: space(16);
+    }
+
+    &__location{
+      padding-bottom: space(8);
+    }
+
+    &__hours{
+      display: inline-block;
+      font-size: $font-body-xs;
+      padding-top: space(32);
+      color: $elm;
+      
+      &::-webkit-details-marker {
+        display: none
+      }
+
+      &:after{ 
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 16px;
+        content: "\f078";
+        margin-left: space(8);
+      }
+
+      &-wrapper{
+        border: 0;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
 }

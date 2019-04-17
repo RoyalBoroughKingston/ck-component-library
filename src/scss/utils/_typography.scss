@@ -169,10 +169,14 @@ address {
 }
 
 @mixin body-alt {
-  font-size: $font-body-alt;
+  font-size: $font-heading-m;
   font-family: $font-secondary;
   font-weight: $font-regular;
   line-height: 1;
+
+  @include bp-md{
+    font-size: $font-body-alt;
+  }
 }
 
 /* Type colours */
