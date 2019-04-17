@@ -1,7 +1,8 @@
 .btn {
   font-size: $font-button-s;
+  font-weight: $font-bold;
   line-height: 1.22;
-  padding: space(8) space(16);
+  padding: space(10) space(16);
   border-radius: 10px;
   transition: all $animation-speed-fast ease-in-out;
   box-sizing: border-box;
@@ -92,7 +93,7 @@
     @include bp-sm{
       font-size: $font-body-m;
     }
-    
+
     @include bp-lg {
       display: inline-block;
       background-color: $white;

@@ -20,14 +20,12 @@ mix
   .copy("src/assets", "dist/assets")
   .buildHtml({
     inject: false,
-    htmlRoot: "./src/index.html",
-    output: "./index.html",
   })
-  .buildHtml({
-    inject: false,
-    htmlRoot: "./src/homepage.html",
-    output: "./homepage.html",
-  })
+  // .buildHtml({
+  //   inject: false,
+  //   htmlRoot: "./src/homepage.html",
+  //   output: "./homepage.html",
+  // })
   .browserSync({
     proxy: false,
     server: { baseDir: "dist" },

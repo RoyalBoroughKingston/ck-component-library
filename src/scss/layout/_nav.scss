@@ -7,10 +7,14 @@
   &--options {
     &__item {
       margin-right: space(16);
-      margin-bottom: space(8);
+      margin-bottom: space(24);
 
       &:last-child {
         margin-right: 0;
+      }
+
+      @include bp-lg{
+        margin-bottom: space(8);
       }
     }
   }
@@ -49,7 +53,7 @@
         content: "Menu";
         font-size: $font-body-xs;
 
-        @include bp-lg{
+        @include bp-md{
           font-size: $font-body-l;
         }
       }
