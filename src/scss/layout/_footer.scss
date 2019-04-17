@@ -16,6 +16,10 @@
 
   @include bp-md {
     padding: space(64) 0;
+    margin-top: 100px; 
+  }
+
+  @include bp-lg{
     margin-top: 160px;
   }
 
@@ -30,7 +34,7 @@
       }
 
       @include bp-xl {
-        top: -26%;
+        top: -29%;
       }
     }
   }
@@ -56,6 +60,9 @@
     @include bp-md {
       background-image: url(../../assets/img/svg/backgrounds/footer-shape.svg);
       top: -106px;
+    }
+
+    @include bp-lg{
       background-color: $white;
     }
   }
@@ -111,7 +118,7 @@
       }
 
       @include bp-xl {
-        top: -20%;
+        top: -23%;
       }
     }
 
