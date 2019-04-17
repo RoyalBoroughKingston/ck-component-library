@@ -7,7 +7,7 @@
 .header {
   background-color: $iceburg;
 
-  @include bp-md{
+  @include bp-lg{
     background-color: initial;
   }
 

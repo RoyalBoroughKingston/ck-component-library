@@ -88,10 +88,13 @@
     font-size: $font-body-xs;
     color: $san-juan;
     display: block;
-
-    @include bp-md {
-      display: inline-block;
+    
+    @include bp-sm{
       font-size: $font-body-m;
+    }
+    
+    @include bp-lg {
+      display: inline-block;
       background-color: $white;
       border: 1px solid $san-juan;
       padding: space(8) space(16);

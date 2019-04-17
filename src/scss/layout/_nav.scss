@@ -39,7 +39,7 @@
       }
     }
 
-    @include bp-md {
+    @include bp-lg {
       display: none;
     }
 
@@ -48,6 +48,10 @@
         color: $san-juan;
         content: "Menu";
         font-size: $font-body-xs;
+
+        @include bp-lg{
+          font-size: $font-body-l;
+        }
       }
     }
 
@@ -70,7 +74,7 @@
   &--desktop {
     display: none !important;
 
-    @include bp-md {
+    @include bp-lg {
       display: block !important;
     }
   }
@@ -83,7 +87,7 @@
   color: $san-juan;
   display: block;
 
-  @include bp-md {
+  @include bp-lg {
     display: inline-block;
     margin: 0;
     font-size: $font-body-s;
@@ -96,7 +100,7 @@
 
 .nav--menu {
   &__item {
-    @include bp-md {
+    @include bp-lg {
       margin-right: space(32);
 
       &:after {
