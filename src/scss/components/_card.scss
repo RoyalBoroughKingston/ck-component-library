@@ -11,7 +11,7 @@
       transition: all $animation-speed-fast;
 
       &:hover {
-        box-shadow: 0 2px 4px 0 rgba(56,56,56,0.5);
+        box-shadow: 0 2px 4px 0 rgba(56, 56, 56, 0.5);
         text-decoration: none;
       }
 
@@ -25,7 +25,6 @@
       width: 78px;
       height: 78px;
 
-
       @include bp-sm {
         width: 100%;
         height: auto;
@@ -37,7 +36,7 @@
       width: 78px;
       height: 78px;
       object-fit: cover;
-      
+
       @include bp-sm {
         border-radius: 25px 25px 0 0;
         width: 100%;
@@ -87,7 +86,7 @@
     }
   }
   /* What people say */
-  &--what-people-say{
+  &--what-people-say {
     background-image: url(../../assets/img/svg/backgrounds/service-quote-shape-mobile.svg);
     background-position: center;
     background-size: contain;
@@ -98,64 +97,73 @@
     flex-wrap: wrap;
     padding: space(16) space(24) space(24) space(24);
 
-    @include bp-sm{
+    @include bp-sm {
       background-image: url(../../assets/img/svg/backgrounds/service-quote-shape.svg);
       padding: space(40);
       flex-wrap: nowrap;
       justify-content: space-between;
     }
 
-    &__icon{
+    &__icon {
       font-size: 40px;
       margin-right: space(24);
       padding-bottom: space(16);
 
-      @include bp-md{
+      @include bp-md {
         padding-bottom: 0;
       }
     }
   }
   /* Where can i access it card */
-  &--access-it{
-    padding: space(32); 
-    background: $alabaster;
+  &--access-it {
+    padding: space(32);
+    background: $white;
     border-radius: 15px;
+    display: flex;
+    box-shadow: 0px 0px 0px 16px $alabaster inset;
 
-    &__intro{
-      color: $san-juan; 
-      margin-left: space(16);
+    @include bp-md{
+      background: $alabaster;
+      box-shadow: none;
     }
 
-    &__title{
+    &__intro {
+      color: $san-juan;
+      margin-left: 0;
+      padding-bottom: space(24);
+
+      @include bp-md{
+        margin-left: space(16);
+        padding-bottom: 0;
+      }
+    }
+
+    &__img-wrapper {
       padding-bottom: space(16);
     }
 
-    &__location{
+    &__title {
+      padding-bottom: space(16);
+    }
+
+    &__location {
       padding-bottom: space(8);
     }
 
-    &__hours{
-      display: inline-block;
-      font-size: $font-body-xs;
+    &__hours {
+      color: $san-juan;
       padding-top: space(32);
+
+      @include bp-md{
+        padding-top: 0;
+      }
+    }
+
+    &__maps {
       color: $elm;
-      
-      &::-webkit-details-marker {
-        display: none
-      }
 
-      &:after{ 
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        font-size: 16px;
-        content: "\f078";
-        margin-left: space(8);
-      }
-
-      &-wrapper{
-        border: 0;
-        margin: 0;
-        padding: 0;
+      &-link {
+        padding-bottom: space(16);
       }
     }
   }
