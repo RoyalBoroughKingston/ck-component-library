@@ -170,7 +170,7 @@
   &--good-to-know {
     background-color: $alabaster;
     padding: space(24);
-    
+
     @include bp-md{
       padding: space(40) space(48);
       background: url(../../assets/img/svg/backgrounds/service-card-lg-shape.svg);
@@ -201,6 +201,32 @@
 
     &__text {
       color: $san-juan;
+    }
+  }
+  /* How can i contact this group */
+  &--contact-group {
+    background: $alabaster;
+    border-radius: 17px;
+    padding: space(48);
+    color: $san-juan;
+
+    &__title{
+      padding-bottom: space(16);
+    }
+
+    &__item{
+      padding-bottom: space(40);
+    }
+
+    &__social{
+     font-size: 26px;
+    }
+
+    &__social-link{
+      margin-right: space(32);
+      &:last-child{
+        margin-right: 0;
+      }
     }
   }
 }
