@@ -122,18 +122,16 @@
     display: flex;
     box-shadow: 0px 0px 0px 16px $alabaster inset;
 
-    @include bp-md{
+    @include bp-md {
       background: $alabaster;
       box-shadow: none;
     }
 
     &__intro {
       color: $san-juan;
-      margin-left: 0;
       padding-bottom: space(24);
 
-      @include bp-md{
-        margin-left: space(16);
+      @include bp-md {
         padding-bottom: 0;
       }
     }
@@ -154,8 +152,9 @@
       color: $san-juan;
       padding-top: space(32);
 
-      @include bp-md{
+      @include bp-md {
         padding-top: 0;
+        justify-content: flex-end;
       }
     }
 
@@ -165,6 +164,43 @@
       &-link {
         padding-bottom: space(16);
       }
+    }
+  }
+  /* Good to know */
+  &--good-to-know {
+    background-color: $alabaster;
+    padding: space(24);
+    
+    @include bp-md{
+      padding: space(40) space(48);
+      background: url(../../assets/img/svg/backgrounds/service-card-lg-shape.svg);
+      background-color: unset;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      padding-bottom: space(40);
+      
+      &:last-child{
+        padding-bottom: 0;
+      }
+    }
+
+    &__icon {
+      font-size: 36px;
+      color: $mercury;
+      padding-right: space(24);
+    }
+
+    &__title {
+      font-weight: $font-bold;
+      color: $san-juan;
+      padding-bottom: space(8);
+    }
+
+    &__text {
+      color: $san-juan;
     }
   }
 }
