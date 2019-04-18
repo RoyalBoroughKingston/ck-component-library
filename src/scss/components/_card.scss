@@ -171,7 +171,7 @@
     background-color: $alabaster;
     padding: space(24);
 
-    @include bp-md{
+    @include bp-md {
       padding: space(40) space(48);
       background: url(../../assets/img/svg/backgrounds/service-card-lg-shape.svg);
       background-color: unset;
@@ -181,8 +181,8 @@
       display: flex;
       align-items: center;
       padding-bottom: space(40);
-      
-      &:last-child{
+
+      &:last-child {
         padding-bottom: 0;
       }
     }
@@ -210,23 +210,63 @@
     padding: space(48);
     color: $san-juan;
 
-    &__title{
+    &__title {
       padding-bottom: space(16);
     }
 
-    &__item{
+    &__item {
       padding-bottom: space(40);
     }
 
-    &__social{
-     font-size: 26px;
+    &__social {
+      font-size: 26px;
     }
 
-    &__social-link{
+    &__social-link {
       margin-right: space(32);
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
+    }
+  }
+  /* Who runs this service */
+  &--runs-service {
+    background: $alabaster;
+    border-radius: 17px;
+    padding: space(24);
+
+    &__img-wrapper {
+      margin: 0 auto;
+      padding-bottom: space(16);
+
+      @include bp-md {
+        margin: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    &__img {
+      border-radius: 17px;
+    }
+
+    &__content {
+      text-align: center;
+      flex-basis: 100%;
+
+      @include bp-md {
+        margin-left: space(32);
+        text-align: left;
+        flex-basis: auto;
+      }
+    }
+
+    &__title {
+      color: $san-juan;
+      padding-bottom: space(16);
+    }
+
+    &__link {
+      color: $elm;
     }
   }
 }
