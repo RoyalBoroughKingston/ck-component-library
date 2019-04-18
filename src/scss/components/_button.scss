@@ -10,7 +10,6 @@
   color: $white;
   border: 3.5px solid $san-juan;
   cursor: pointer;
-  display: inline-block;
   @include button-hvr;
   @include button-focus;
 
@@ -56,9 +55,10 @@
 
     &--s {
       background-color: $cranberry;
+      font-size: $font-body-m;
       color: $white;
-      border: 2px solid $cranberry;
-      padding: space(8) space(16);
+      border: 2px solid $white;
+      padding: .25rem space(16);
       @include button-hvr-alt($white, 2px);
     }
 
