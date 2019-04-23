@@ -10,16 +10,16 @@
   margin-top: 0;
   color: $white;
 
-  @include bp-sm{
+  @include bp-sm {
     margin-top: 80px;
   }
 
   @include bp-md {
     padding: space(64) 0;
-    margin-top: 100px; 
+    margin-top: 100px;
   }
 
-  @include bp-lg{
+  @include bp-lg {
     margin-top: 160px;
   }
 
@@ -53,7 +53,7 @@
     top: -4px;
     background-color: $iceburg;
 
-    @include bp-sm{
+    @include bp-sm {
       top: -96px;
     }
 
@@ -62,7 +62,7 @@
       top: -106px;
     }
 
-    @include bp-lg{
+    @include bp-lg {
       background-color: $white;
     }
   }
@@ -106,7 +106,7 @@
       top: -5%;
       right: 2%;
 
-      @include bp-sm{
+      @include bp-sm {
         top: -22%;
         right: 5%;
       }

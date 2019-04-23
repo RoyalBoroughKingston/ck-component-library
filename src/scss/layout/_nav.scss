@@ -17,6 +17,11 @@
         margin-bottom: space(8);
       }
     }
+
+    // ie fix
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      text-align: right;
+    }
   }
 
   &--hamburger {
@@ -135,5 +140,10 @@
         }
       }
     }
+  }
+
+   // ie fix
+   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    text-align: right;
   }
 }

@@ -58,7 +58,7 @@
       font-size: $font-body-m;
       color: $white;
       border: 2px solid $white;
-      padding: .25rem space(16);
+      padding: 0.25rem space(16);
       @include button-hvr-alt($white, 2px);
     }
 
@@ -90,8 +90,8 @@
     font-size: $font-body-xs;
     color: $san-juan;
     display: block;
-    
-    @include bp-sm{
+
+    @include bp-sm {
       font-size: $font-body-m;
     }
 

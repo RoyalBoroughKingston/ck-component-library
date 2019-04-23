@@ -8,7 +8,7 @@
   background-color: $iceburg;
 
   @include bp-lg {
-    background-color: initial;
+    background-color: inherit;
   }
 
   &__img {
