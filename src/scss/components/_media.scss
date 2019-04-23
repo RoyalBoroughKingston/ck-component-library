@@ -1,0 +1,71 @@
+.image-viewer {
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  background-color: $iceburg;
+  display: inline-block;
+  text-align: center;
+
+  &__text {
+    padding: space(16) 0;
+    color: $san-juan;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  &__inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    > .image-viewer__img {
+      flex-basis: 100%;
+      &:first-child {
+        border-radius: 0 17px 0 0;
+      }
+
+      @include bp-md {
+        &:first-child {
+          border-radius: 0;
+        }
+      }
+    }
+
+    @include bp-md {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+
+    > .image-viewer__img {
+      border-radius: 17px 0 0 0;
+      width: 140px;
+      height: 166px;
+      
+      @include bp-md{
+        width: 255px;
+        height: 180px;
+      }
+    }
+  }
+
+  &__img {
+    width: 205px;
+    height: 83px;
+
+    @include bp-md {
+      width: 255px;
+      height: 180px;
+
+      &:last-child {
+        border-radius: 0 17px 0 0;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: space(8);
+    color: $san-juan;
+  }
+}

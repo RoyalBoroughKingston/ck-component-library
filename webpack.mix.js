@@ -21,11 +21,11 @@ mix
   .buildHtml({
     inject: false,
   })
-  .buildHtml({
-    inject: false,
-    htmlRoot: "./src/homepage.html",
-    output: "./homepage.html",
-  })
+  // .buildHtml({
+  //   inject: false,
+  //   htmlRoot: "./src/homepage.html",
+  //   output: "./homepage.html",
+  // })
   //  .buildHtml({
   //   inject: false,
   //   htmlRoot: "./src/service.html",
