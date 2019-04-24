@@ -1,6 +1,23 @@
-.service__title{
-  padding: space(40);
-  color: $san-juan;
+.service{
+  &__title{
+    padding: space(40);
+    color: $san-juan;
+  }
+
+  &__social{
+    margin-top: space(24);
+  }
+
+  &__share{
+    margin-top: space(24);
+    padding: space(24) space(16);
+    background: url(../../../assets/img/svg/backgrounds/service-share-shape.svg) no-repeat;
+    color: $san-juan;
+
+    &-item{
+      margin-right: space(24);
+    }
+  }
 }
 
 .content-block{

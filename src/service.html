@@ -10,7 +10,7 @@
     <!--Header-->
     <include src="./header.html"></include>
     <!--Main-->
-    <main id="app" class="homepage">
+    <main id="app" class="service">
       <!--Service header-->
       <include src="./service-header.html"></include>
       <!--Content section-->
@@ -32,8 +32,12 @@
             <!--Where can i access it-->
             <h2 class="service__title">Where can i access is?</h2>
             <include src="./where-can-i-access-it.html"></include>
+            <!--Good to know-->
+            <h2 class="service__title">Good to know</h2>
+            <include src="./good-to-know.html"></include>
           </div>
-          <div class="col-xsmall-12 col-small-4">
+          <!--Sidebar-->
+          <aside class="col-xsmall-12 col-small-4">
             <!--Embeded video-->
             <iframe
               class="video"
@@ -46,7 +50,37 @@
             <!--Who runs this service-->
             <h2 class="service__title">Who runs this service?</h2>
             <include src="./who-runs-this-service.html"></include>
-          </div>
+            <!--Social buttons-->
+            <div class="service__social row -no-gutters">
+              <div class="col-small-5 -no-gutters">
+                <button class="btn btn--alt btn--alt--m">
+                  Print page <i class="btn__icon fas fa-print"></i>
+                </button>
+              </div>
+              <div class="col-small-7 -no-gutters">
+                <button class="btn btn--alt btn--alt--m">
+                  Add to favourites <i class="btn__icon fas fa-star"></i>
+                </button>
+              </div>
+              <div class="col-small-12 -no-gutters">
+                <div class="service__share row -no-gutters">
+                  <p class="service__share-item">Share</p>
+                  <a class="service__share-item" href="/"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="service__share-item" href="/"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="service__share-item" href="/"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <a class="service__share-item" href="/"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </main>

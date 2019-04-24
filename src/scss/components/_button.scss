@@ -14,7 +14,7 @@
   @include button-focus;
 
   @include bp-md {
-    padding: space(16) space(24);
+    padding: 0.75rem space(24);
     font-size: $font-button;
   }
 
@@ -51,6 +51,7 @@
       color: $san-juan;
       border: 2px solid $san-juan;
       @include button-hvr-alt($san-juan, 2px);
+      font-size: $font-body-m;
     }
 
     &--s {
