@@ -99,15 +99,15 @@
       font-size: 36px;
     }
 
-    &__cost{
+    &__cost {
       font-weight: $font-bold;
     }
 
-    &__description{
+    &__description {
       font-weight: $font-bold;
     }
 
-    &--alt{
+    &--alt {
       background-color: $iceburg;
     }
   }
@@ -148,7 +148,7 @@
     display: flex;
     box-shadow: 0px 0px 0px 16px $alabaster inset;
     margin-bottom: space(24);
-    
+
     @include bp-md {
       background: $alabaster;
       box-shadow: none;
@@ -297,16 +297,32 @@
     }
   }
   /*Make connection*/
-  &--make-connection{
+  &--make-connection {
     background-color: $pink;
     border-radius: 17px;
     text-align: center;
     padding: space(24) 0;
     margin-bottom: space(24);
 
-    &__text{
+    &__text {
       color: $san-juan;
       padding-top: space(16);
+    }
+  }
+  /*Related services*/
+  &--related-services {
+    background: $alabaster;
+    border-radius: 17px;
+    padding: space(24);
+
+    &__title{
+      color: $san-juan;
+      padding-bottom: space(24);
+    }
+
+    &__text{
+      color: $elm;
+      padding-bottom: space(32);
     }
   }
 }

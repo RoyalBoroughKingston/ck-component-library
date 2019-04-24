@@ -22,6 +22,22 @@
   &__video{
     margin-top: space(32);
   }
+
+  &__related{
+    background: url(../../../assets/img/svg/backgrounds/service-related.svg) no-repeat;
+    color: $san-juan;
+    padding-top: space(80);
+
+    &__intro{
+      text-align: center;
+      padding-bottom: space(40);
+    }
+
+    &__btn{
+      text-align: center;
+      padding: space(40) 0;
+    }
+  }
 }
 
 .content-block{
