@@ -26,11 +26,11 @@ mix
   //   htmlRoot: "./src/homepage.html",
   //   output: "./homepage.html",
   // })
-  //  .buildHtml({
-  //   inject: false,
-  //   htmlRoot: "./src/service.html",
-  //   output: "./service.html",
-  // })
+   .buildHtml({
+    inject: false,
+    htmlRoot: "./src/service.html",
+    output: "./service.html",
+  })
   .browserSync({
     proxy: false,
     server: { baseDir: "dist" },

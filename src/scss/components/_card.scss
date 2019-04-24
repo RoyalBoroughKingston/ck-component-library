@@ -76,14 +76,39 @@
     padding: space(24);
     background: $alabaster;
     border-radius: 0;
+    color: $san-juan;
+    display: flex;
+    align-items: center;
 
-    @include bp-md {
+    @include bp-sm {
       border-radius: 25px;
     }
 
     &__title {
-      padding-right: space(24);
       color: $san-juan;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      flex-basis: 40%;
+    }
+
+    &__icon {
+      display: flex;
+      justify-content: center;
+      color: $elm;
+      font-size: 36px;
+    }
+
+    &__cost{
+      font-weight: $font-bold;
+    }
+
+    &__description{
+      font-weight: $font-bold;
+    }
+
+    &--alt{
+      background-color: $iceburg;
     }
   }
   /* What people say */
@@ -268,6 +293,19 @@
 
     &__link {
       color: $elm;
+    }
+  }
+  /*Make connection*/
+  &--make-connection{
+    background-color: $pink;
+    border-radius: 17px;
+    text-align: center;
+    padding: space(24) 0;
+    margin-bottom: space(24);
+
+    &__text{
+      color: $san-juan;
+      padding-top: space(16);
     }
   }
 }
