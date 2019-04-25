@@ -28,6 +28,7 @@
     margin-top: space(16);
     padding: 0;
     width: 65px;
+    height: 30px;
     border: none;
     background: transparent;
     display: inline-flex;
@@ -77,6 +78,12 @@
     display: none;
     &--active {
       display: block;
+      background: url(../../assets/img/svg/backgrounds/home-white-shape-mobile.svg) no-repeat;
+      background-size: cover;
+      background-position: 50%;
+      padding: space(80) space(32);
+      width: 100%;
+      margin-top: space(64);
     }
   }
 

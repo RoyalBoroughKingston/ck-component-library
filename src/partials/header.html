@@ -1,41 +1,71 @@
-<header class="header container row">
-  <figure class="header__img-container col-xsmall-9 col-medium-6">
-    <a href="/"
-      ><img
-        class="header__img"
-        src="./assets/img/logos/ck-logo.svg"
-        alt="Connected kingston logo"
-    /></a>
-  </figure>
-  <!--Options nav-->
-  <nav
-    class="nav--options nav--desktop col-xsmall-6 col-small-6 -xsmall-end"
-  >
-    <a class="nav--options__item btn btn--header" href="#">Translate <i class="btn__icon fas fa-language"></i></a>
-    <a class="nav--options__item btn btn--header" href="#">Give feedback <i class="btn__icon fas fa-comment"></i></a>
-    <a class="nav--options__item btn btn--header" href="#">View favourites <i class="btn__icon fas fa-star"></i></a>
-  </nav>
-  <!--Pages nav-->
-  <button
-    id="jsHamburger"
-    type="button"
-    name="nav--hamburger"
-    class="col-xsmall-3 col-medium-2 col-medium-offset-4 nav--hamburger"
-    role="button"
-  >
-    <label class="nav--hamburger__label" for="nav--hamburger"></label>
-    <i class="nav--hamburger__icon bars fa fa-bars" title="Menu Trigger"></i>
-  </button>
-  <nav
-    class="nav--menu nav--desktop col-xsmall-12 col-medium-offset-6 -medium-end"
-  >
-    <a href="/" class="nav--menu__item nav--menu__item--active">Home</a
-    ><a href="/about-us" class="nav--menu__item nav--menu__item">About us</a
-    ><a href="/contact-us" class="nav--menu__item nav--menu__item"
-      >Contact us</a
+<header id="jsHeader" class="header container">
+  <div class="row">
+    <figure class="header__img-container col-xsmall-9 col-medium-6">
+      <a href="/"
+        ><img
+          class="header__img"
+          src="./assets/img/logos/ck-logo.svg"
+          alt="Connected kingston logo"
+      /></a>
+    </figure>
+    <!--Options nav-->
+    <nav class="nav--options nav--desktop col-xsmall-6 col-small-6 -xsmall-end">
+      <a class="nav--options__item btn btn--header" href="#"
+        >Translate <i class="btn__icon fas fa-language"></i
+      ></a>
+      <a class="nav--options__item btn btn--header" href="#"
+        >Give feedback <i class="btn__icon fas fa-comment"></i
+      ></a>
+      <a class="nav--options__item btn btn--header" href="#"
+        >View favourites <i class="btn__icon fas fa-star"></i
+      ></a>
+    </nav>
+    <!--Pages nav-->
+    <button
+      id="jsHamburger"
+      type="button"
+      name="nav--hamburger"
+      class="col-xsmall-3 col-medium-2 col-medium-offset-4 nav--hamburger"
+      role="button"
     >
-    <a href="/get-involved" class="nav--menu__item nav--menu__item"
-      >Get involved</a
+      <label class="nav--hamburger__label" for="nav--hamburger"></label>
+      <i class="nav--hamburger__icon bars fa fa-bars" title="Menu Trigger"></i>
+    </button>
+    <nav
+      class="nav--menu nav--desktop col-xsmall-12 col-medium-offset-6 -medium-end"
     >
-  </nav>
+      <a href="/" class="nav--menu__item nav--menu__item--active">Home</a
+      ><a href="/about-us" class="nav--menu__item nav--menu__item">About us</a
+      ><a href="/contact-us" class="nav--menu__item nav--menu__item"
+        >Contact us</a
+      >
+      <a href="/get-involved" class="nav--menu__item nav--menu__item"
+        >Get involved</a
+      >
+    </nav>
+    <!--Mobile nav-->
+    <div id="jsMobileMenu" class="nav--mobile">
+      <nav class="nav--menu col-xsmall-12 -no-gutters">
+        <a href="/" class="nav--menu__item nav--menu__item--active" href="/"
+          >Home</a
+        ><a href="/about-us" class="nav--menu__item nav--menu__item" href="/"
+          >About us</a
+        ><a href="/contact-us" class="nav--menu__item nav--menu__item" href="/"
+          >Contact us</a
+        >
+        <a href="/get-involved" class="nav--menu__item nav--menu__item" href="/"
+          >Get involved</a
+        >
+      </nav>
+      <nav class="nav--options col-xsmall-12 -no-gutters">
+        <a class="nav--options__item btn--header" href="/"
+          >Translate <i class="btn__icon fas fa-language"></i></a
+        ><a class="nav--options__item btn--header" href="/"
+          >Give feedback <i class="btn__icon fas fa-comment"></i></a
+        ><a class="nav--options__item btn--header" href="/"
+          >View favourites <i class="btn__icon fas fa-star"></i
+        ></a>
+      </nav>
+    </div>
+  </div>
 </header>
