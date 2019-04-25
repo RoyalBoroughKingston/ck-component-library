@@ -29,7 +29,13 @@
   }
 
   &--l {
-    padding: space(24) space(40);
+    padding: space(24);
+    font-size: $font-body-s;
+
+    @include bp-md {
+      padding: space(24) space(40);
+      font-size: $font-button-s;
+    }
   }
 
   &:disabled {
@@ -46,15 +52,15 @@
     border-radius: 40px;
     transition: all $animation-speed-fast linear;
     background-color: unset;
-    
-    &--m {  
+
+    &--m {
       color: $san-juan;
       border: 2px solid $san-juan;
       @include button-hvr-alt($san-juan, 2px);
       font-size: $font-body-m;
     }
 
-    &--s {   
+    &--s {
       font-size: $font-body-m;
       color: $white;
       border: 2px solid $white;

@@ -1,7 +1,11 @@
 .service {
   &__title {
-    padding: space(40) 0 space(40) space(40);
+    padding: space(40) 0;
     color: $san-juan;
+
+    @include bp-md {
+      padding: space(40) 0 space(40) space(40);
+    }
   }
 
   &__social {
