@@ -1,11 +1,17 @@
 .service {
   &__title {
-    display: none;
     color: $san-juan;
-
+    padding: space(40) 0;
+    
     @include bp-md {
-      display: block;
       padding: space(40) 0 space(40) space(40);
+    }
+
+    &--accordion {
+      display: none;
+      @include bp-md {
+        display: block;
+      }
     }
   }
 

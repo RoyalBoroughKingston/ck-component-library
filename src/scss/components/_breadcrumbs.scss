@@ -17,12 +17,16 @@
     &:not(:last-child) {
       &::before {
         position: absolute;
-        top: 0;
         right: -6px;
-        //TODO: Change to font awesome
         color: black;
-        content: ">";
-        font-size: 18px;
+        content: "\f054";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 14px;
+
+        @include bp-md{
+          top: 5px;
+        }
       }
 
       &:after {
