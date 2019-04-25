@@ -20,6 +20,14 @@
 
   &__icon {
     padding-left: space(16);
+
+    &--share{
+      display: none;
+      
+      @include bp-md{
+        display: inline;
+      }
+    }
   }
 
   &--s {
@@ -57,7 +65,11 @@
       color: $san-juan;
       border: 2px solid $san-juan;
       @include button-hvr-alt($san-juan, 2px);
-      font-size: $font-body-m;
+      font-size: $font-body-s;
+
+      @include bp-md{
+        font-size: $font-body-m;
+      }
     }
 
     &--s {
