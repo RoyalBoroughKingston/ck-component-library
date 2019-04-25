@@ -1,4 +1,6 @@
 .breadcrumb {
+  margin: space(24) 0;
+
   [class*="breadcrumb__item"] {
     @include body-xs;
     color: $elm;
