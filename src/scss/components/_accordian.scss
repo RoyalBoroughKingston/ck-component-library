@@ -64,7 +64,8 @@
     padding: 0 0 space(16) 0;
     display: none;
     overflow: hidden;
-
+    width: 100%;
+    
     @include bp-md{
       display: block;
       padding: 0;

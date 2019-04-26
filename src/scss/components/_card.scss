@@ -189,6 +189,10 @@
 
       &-link {
         padding-bottom: space(16);
+
+        @include bp-lg{
+          flex-basis: 100%;
+        }
       }
     }
   }
@@ -267,8 +271,11 @@
       padding-bottom: space(16);
 
       @include bp-md {
-        margin: 0;
         padding-bottom: 0;
+      }
+
+      @include bp-lg {
+        margin: 0;
       }
     }
 
@@ -280,7 +287,7 @@
       text-align: center;
       flex-basis: 100%;
 
-      @include bp-md {
+      @include bp-lg {
         margin-left: space(32);
         text-align: left;
         flex-basis: auto;
@@ -302,11 +309,20 @@
     border-radius: 17px;
     text-align: center;
     padding: space(24) 0;
-    margin-bottom: space(24);
+ 
+    margin: space(24) 0;
+
+    @include bp-lg{
+     margin: 0 0 space(24) 0;
+    }
 
     &__text {
       color: $san-juan;
-      padding-top: space(16);
+      padding: space(16) space(16) 0 space(16);
+      
+      @include bp-md{
+        padding: space(16);
+      }
     }
   }
   /*Related services*/
@@ -315,17 +331,17 @@
     border-radius: 17px;
     padding: space(24);
     margin-bottom: space(24);
-    
-    @include bp-md{
+
+    @include bp-md {
       margin-bottom: 0;
     }
 
-    &__title{
+    &__title {
       color: $san-juan;
       padding-bottom: space(24);
     }
 
-    &__text{
+    &__text {
       color: $elm;
       padding-bottom: space(32);
     }
