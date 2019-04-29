@@ -72,8 +72,11 @@
 }
 
 .content-block {
-  background-color: $iceburg;
-  border-radius: 17px;
-  padding: space(24);
   margin: space(24) 0;
+
+  @include bp-sm{
+    background-color: $iceburg;
+    border-radius: 17px;
+    padding: space(24);
+  }
 }
