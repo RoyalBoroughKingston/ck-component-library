@@ -17,6 +17,14 @@
 
   &__social {
     margin-top: space(24);
+
+    &--second-row{
+      margin-top: space(16);
+
+      @include bp-md{
+        margin-top: 0;
+      }
+    }
   }
 
   &__share {
@@ -25,9 +33,22 @@
     background: url(../../../assets/img/svg/backgrounds/service-share-shape.svg)
       no-repeat;
     color: $san-juan;
+    display: none;
+
+    @include bp-md {
+      display: flex;
+    }
 
     &-item {
       margin-right: space(24);
+    }
+
+    &-btn {
+      display: block;
+
+      @include bp-md {
+        display: none;
+      }
     }
   }
 
@@ -61,11 +82,11 @@
       background-color: $hawkes-blue;
     }
 
-    @include bp-sm{
+    @include bp-sm {
       margin-top: 80px;
     }
 
-    @include bp-md{
+    @include bp-md {
       margin-top: 100px;
     }
   }
@@ -74,7 +95,7 @@
 .content-block {
   margin: space(24) 0;
 
-  @include bp-sm{
+  @include bp-sm {
     background-color: $iceburg;
     border-radius: 17px;
     padding: space(24);

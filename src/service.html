@@ -25,7 +25,7 @@
       <div class="container">
         <!--Who's it for-->
         <h2 class="service__title">Who's it for</h2>
-        <section class="row -large-no-gutters">
+        <section class="row">
           <include src="./whos-it-for.html"></include>
         </section>
         <div class="row">
@@ -70,7 +70,7 @@
           <aside class="col-xsmall-12 col-medium-4">
             <!--Dekstop Embeded video-->
             <iframe
-              class="service__video video video--desktop"
+              class="service__video video"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
             >
             </iframe>
@@ -91,7 +91,14 @@
             <!--Social buttons-->
             <div class="service__social row -xsmall-no-gutters">
               <div
-                class="col-xsmall-5 col-small-5 col-medium-12 col-large-5 -xsmall-no-gutters"
+                class="col-xsmall-6 col-small-5 col-medium-12 col-large-5 -xsmall-no-gutters service__share-btn"
+              >
+                <button class="btn btn--alt btn--alt--m">
+                  Give feedback
+                </button>
+              </div>
+              <div
+                class="col-xsmall-6 col-small-5 col-medium-12 col-large-5 -xsmall-no-gutters"
               >
                 <button class="btn btn--alt btn--alt--m">
                   Print page
@@ -99,11 +106,19 @@
                 </button>
               </div>
               <div
-                class="col-xsmall-7 col-small-7 col-medium-12 col-large-7 -xsmall-no-gutters"
+                class="service__social--second-row col-xsmall-6 col-small-7 col-medium-12 col-large-7 -xsmall-no-gutters"
               >
                 <button class="btn btn--alt btn--alt--m">
                   Add to favourites
                   <i class="btn__icon btn__icon--share fas fa-star"></i>
+                </button>
+              </div>
+
+              <div
+                class="service__social--second-row col-xsmall-6 col-small-5 col-medium-12 -xsmall-no-gutters service__share-btn"
+              >
+                <button class="btn btn--alt btn--alt--m">
+                  Share
                 </button>
               </div>
               <div class="col-small-12 -xsmall-no-gutters">
