@@ -1,9 +1,19 @@
 ul{
   list-style: none;
-
+  padding-inline-start: 20px;
+ 
   li{
     display: inline-block;
-    margin-right: space(32);
+    margin-right: space(24);
+
+    @include bp-md{
+      margin-right: space(32);
+    }
+    &:first-child{
+      &::before{
+        content: none;
+      }
+    }
 
     &:before{
       content: "\2022";  
