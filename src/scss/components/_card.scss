@@ -271,12 +271,9 @@
       margin: 0 auto;
       padding-bottom: space(16);
 
-      @include bp-md {
-        padding-bottom: 0;
-      }
-
-      @include bp-lg {
+      @include bp-xl {
         margin: 0;
+        padding-bottom: 0;
       }
     }
 
@@ -288,7 +285,7 @@
       text-align: center;
       flex-basis: 100%;
 
-      @include bp-lg {
+      @include bp-xl {
         margin-left: space(32);
         text-align: left;
         flex-basis: auto;

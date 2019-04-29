@@ -21,7 +21,7 @@
     &--second-row{
       margin-top: space(16);
 
-      @include bp-md{
+      @include bp-xl{
         margin-top: 0;
       }
     }
