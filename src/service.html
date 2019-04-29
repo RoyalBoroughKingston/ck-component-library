@@ -34,6 +34,12 @@
             <h2 class="service__title">What is this group?</h2>
             <!--Image viewer-->
             <include src="./image-viewer.html"></include>
+            <!--Mobile Embeded video-->
+            <iframe
+              class="service__video video video--mobile"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            >
+            </iframe>
             <!--Content block-->
             <section>
               <include src="./content-block.html"></include>
@@ -62,9 +68,9 @@
           </div>
           <!--Sidebar-->
           <aside class="col-xsmall-12 col-medium-4">
-            <!--Embeded video-->
+            <!--Dekstop Embeded video-->
             <iframe
-              class="service__video video"
+              class="service__video video video--desktop"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
             >
             </iframe>
@@ -95,30 +101,31 @@
               <div
                 class="col-xsmall-7 col-small-7 col-medium-12 col-large-7 -xsmall-no-gutters"
               >
-              <button class="btn btn--alt btn--alt--m">
-                Add to favourites
-                <i class="btn__icon btn__icon--share fas fa-star"></i>
-              </button>      
-            </div> 
-            <div class="col-small-12 -xsmall-no-gutters">
-              <div class="service__share row -xsmall-no-gutters">
-                <p class="service__share-item">Share</p>
-                <a class="service__share-item" href="/"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="service__share-item" href="/"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a class="service__share-item" href="/"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a class="service__share-item" href="/"
-                  ><i class="fas fa-envelope"></i
-                ></a>
+                <button class="btn btn--alt btn--alt--m">
+                  Add to favourites
+                  <i class="btn__icon btn__icon--share fas fa-star"></i>
+                </button>
               </div>
-            </div> 
-          </div>
-        </aside>
+              <div class="col-small-12 -xsmall-no-gutters">
+                <div class="service__share row -xsmall-no-gutters">
+                  <p class="service__share-item">Share</p>
+                  <a class="service__share-item" href="/"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="service__share-item" href="/"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="service__share-item" href="/"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <a class="service__share-item" href="/"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
       </div>
       <!--Related services-->
       <include src="./related-services.html"></include>
