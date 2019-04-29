@@ -5,10 +5,12 @@
  */
 
 .header {
-  background-color: $iceburg;
-
-  @include bp-lg {
-    background-color: inherit;
+  &--homepage {
+    background-color: $iceburg;
+    
+    @include bp-lg {
+      background-color: inherit;
+    }
   }
 
   &__img {
@@ -102,5 +104,6 @@
     left: 0;
     top: 0;
     overflow-x: hidden;
+    background-color: $iceburg;
   }
 }
