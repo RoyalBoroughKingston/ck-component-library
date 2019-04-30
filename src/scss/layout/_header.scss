@@ -30,9 +30,11 @@
     padding: space(24) space(24) space(32);
     background-color: $cranberry;
     position: relative;
-    padding: space(8) 0;
     margin-top: space(64);
     color: $mercury;
+    @include bp-md{
+      height: 180px;
+    }
 
     &:before {
       background: url(../..//assets/img/svg/backgrounds/service-header-shape-mobile.svg);
@@ -73,7 +75,7 @@
         @include bp-md {
           top: -70px;
         }
-        
+
         @include bp-lg {
           top: -60px;
         }
@@ -105,14 +107,16 @@
         margin-top: -60px;
         margin-bottom: -30px;
         z-index: 1;
-        width: 210px;
+        width: 230px;
+        height: 230px;
       }
     }
 
     &__img {
       border-radius: 100%;
       width: 100%;
-
+      height: 100%;
+      
       @include bp-md {
         border: 10px solid $alabaster;
         border-radius: 17px;
