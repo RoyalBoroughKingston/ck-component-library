@@ -7,7 +7,7 @@
 .header {
   &--homepage {
     background-color: $iceburg;
-    
+
     @include bp-lg {
       background-color: inherit;
     }
@@ -45,11 +45,47 @@
       position: absolute;
       left: 0;
       top: -54px;
+      @include bp-md {
+        background: url(../..//assets/img/svg/backgrounds/service-header-shape.svg);
+      }
     }
 
-    @include bp-md {
+    &:after {
+      @include bp-lg {
+        content: url(../../assets/img/svg/trees/peurto-small.svg);
+        position: absolute;
+        top: 60px;
+        right: 7%;
+      }
+    }
+
+    &__content {
+      position: relative;
+
       &:before {
-        background: url(../..//assets/img/svg/backgrounds/service-header-shape.svg);
+        content: url(../../assets/img/svg/trees/iceberg-small.svg);
+        position: absolute;
+        top: -90px;
+        right: 0px;
+        left: 20%;
+        text-align: center;
+
+        @include bp-md {
+          top: -70px;
+        }
+        
+        @include bp-lg {
+          top: -60px;
+        }
+      }
+
+      &:after {
+        @include bp-lg {
+          content: url(../../assets/img/svg/trees/iceberg-lg.svg);
+          position: absolute;
+          top: 40px;
+          right: -1%;
+        }
       }
     }
 
@@ -100,7 +136,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     left: 0;
     top: 0;
     overflow-x: hidden;

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="498px" height="219px" viewBox="0 0 498 219" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Mask Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M890.005273,1093.18804 C897.075764,1077.65806 950.548069,1081.39429 1106.8352,1081.39429 C1203.62359,1081.39429 1289.36355,1081.51545 1364.05508,1081.75776 L1364.05508,1081.75776 C1373.42234,1081.78815 1380.99993,1089.39036 1380.99993,1098.75767 L1381,1283 C1381,1292.38884 1373.38885,1300 1364.00001,1300.00001 C1364,1300.00001 1364,1300.00001 1364,1300.00001 L900.008794,1300 C890.619954,1300 883.008794,1292.38884 883.008794,1283 C883.008794,1282.99199 883.0088,1282.98398 883.008811,1282.97597 C883.173689,1166.33346 885.505843,1103.07082 890.005273,1093.18804 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---Service" transform="translate(-883.000000, -1081.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask-Copy" fill="#FFBFCE" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

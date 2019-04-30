@@ -18,10 +18,10 @@
   &__social {
     margin-top: space(24);
 
-    &--second-row{
+    &--second-row {
       margin-top: space(16);
 
-      @include bp-xl{
+      @include bp-xl {
         margin-top: 0;
       }
     }
@@ -99,5 +99,13 @@
     background-color: $iceburg;
     border-radius: 17px;
     padding: space(24);
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: space(24) 0;
   }
 }

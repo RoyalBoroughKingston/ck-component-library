@@ -132,11 +132,9 @@
 
     &__icon {
       font-size: 40px;
-      margin-right: space(24);
-      padding-bottom: space(16);
 
       @include bp-md {
-        padding-bottom: 0;
+        margin-right: space(24);
       }
     }
   }
@@ -307,11 +305,13 @@
     border-radius: 17px;
     text-align: center;
     padding: space(24) 0;
- 
+    position: relative;
     margin: space(24) 0;
 
     @include bp-lg{
      margin: 0 0 space(24) 0;
+     background-color: transparent;
+     background-image: url(../../assets/img/svg/backgrounds/service-contact-group.svg);
     }
 
     &__text {
@@ -320,7 +320,14 @@
       
       @include bp-md{
         padding: space(16);
-      }
+      } 
+    }
+
+    &:before{
+      content: url(../../assets/img/svg/trees/iceberg-small.svg);
+      position: absolute;
+      top: -20px;  
+      right: 5%;
     }
   }
   /*Related services*/
