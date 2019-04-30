@@ -126,4 +126,10 @@
       }
     }
   }
+  &__section{
+    margin: 0 -15px;
+    @include bp-md{
+      margin: 0;
+    }
+  }
 }

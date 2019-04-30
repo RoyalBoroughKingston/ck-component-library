@@ -59,7 +59,7 @@
   &--alt {
     border-radius: 40px;
     transition: all $animation-speed-fast linear;
-    background-color: unset;
+    background-color: transparent;
 
     &--m {
       color: $san-juan;

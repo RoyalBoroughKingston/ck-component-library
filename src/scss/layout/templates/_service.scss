@@ -3,7 +3,7 @@
     color: $san-juan;
     padding: space(40) 0;
 
-    @include bp-md {
+    @include bp-xl {
       padding: space(40) 0 space(40) space(40);
     }
 
