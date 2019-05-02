@@ -27,7 +27,7 @@
 
   /* Service header */
   &--service {
-    padding: space(24) space(24) space(32);
+    padding: space(24) 0;
     background-color: $cranberry;
     position: relative;
     margin-top: space(64);
@@ -35,6 +35,7 @@
 
     @include bp-md {
       height: 180px;
+      padding: space(24) space(24) space(32);
     }
 
     &:before {
@@ -60,7 +61,7 @@
         position: absolute;
         top: 60px;
         right: 7%;
-        
+
         //ie size fix
         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           width: 33px;
