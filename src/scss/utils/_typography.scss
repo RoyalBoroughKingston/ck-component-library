@@ -90,7 +90,7 @@ address {
 
 /* Type mixins */
 @mixin heading-xl {
-  font-size: $font-heading-m;
+  font-size: $font-heading-s;
   font-family: $font-primary;
   font-weight: $font-bold;
   line-height: 1.2;
@@ -155,10 +155,14 @@ address {
 }
 
 @mixin body-s {
-  font-size: $font-body-s;
+  font-size: $font-body-xs;
   font-family: $font-primary;
   font-weight: $font-regular;
   line-height: 1.25;
+  
+  @include bp-md{
+    font-size: $font-body-s;
+  }
 }
 
 @mixin body-xs {

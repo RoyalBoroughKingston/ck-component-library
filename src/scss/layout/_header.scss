@@ -56,20 +56,16 @@
     }
 
     &::after {
-      @include bp-lg {
+      @include bp-wide {
         content: url(../../assets/img/svg/trees/peurto-small.svg);
         position: absolute;
-        top: 60px;
+        top: 125px;
         right: 7%;
 
         //ie size fix
         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           width: 33px;
         }
-      }
-
-      @include bp-xl {
-        top: 125px;
       }
     }
 
@@ -125,10 +121,6 @@
         z-index: 1;
         width: 230px;
         height: 230px;
-      }
-
-      @include bp-lg {
-        margin-top: -70px;
       }
     }
 
