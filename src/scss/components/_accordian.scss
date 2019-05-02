@@ -97,6 +97,11 @@
       padding: space(24) 0 0 0;
     }
 
+    &__list{
+      padding-inline-start: 0;
+      margin: space(8) 0 0 0;
+    }
+
     &[open] {
       .accordion--time__content {
         &:after {
