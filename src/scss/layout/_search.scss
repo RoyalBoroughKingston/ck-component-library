@@ -185,6 +185,13 @@
       display: block;
     }
 
+    // Remove default list styling
+    li{
+      &::before{
+        content: none;
+      }
+    }
+
     // ie fix
     div{
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -202,10 +209,6 @@
   }
 
   &__category {
-    margin: 0 space(24) space(24) 0;
-
-    &:last-child {
-      margin: 0;
-    }
+  margin-bottom: space(16);
   }
 }

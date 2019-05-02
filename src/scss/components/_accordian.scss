@@ -12,9 +12,9 @@
   display: flex;
   align-items: center;
 
-  &:after{
+  &:after {
     font-family: "Font Awesome 5 Free";
-    content: '\f078';
+    content: "\f078";
     font-weight: 900;
     font-size: 28px;
     color: $san-juan;
@@ -22,29 +22,29 @@
     margin-left: auto;
   }
 
-  @include bp-md{
+  @include bp-md {
     display: none;
   }
 
   &--white {
     background-color: $white;
 
-    @include bp-md{
+    @include bp-md {
       background-color: inherit;
     }
 
-    +.accordion__panel{
+    + .accordion__panel {
       background-color: $white;
 
-      @include bp-md{
+      @include bp-md {
         background-color: inherit;
       }
 
-      .accordion__content{
+      .accordion__content {
         background-color: $alabaster;
         box-shadow: 0px 0px 0px 16px $white inset;
 
-        @include bp-md{
+        @include bp-md {
           background-color: inherit;
           box-shadow: none;
         }
@@ -52,9 +52,9 @@
     }
   }
 
-  &--active{
-    &:after{
-      content: '\f077';
+  &--active {
+    &:after {
+      content: "\f077";
     }
   }
 
@@ -63,13 +63,12 @@
     margin: 0;
     padding: 0 0 space(16) 0;
     display: none;
-    overflow: hidden;
     width: 100%;
-    
-    @include bp-md{
+
+    @include bp-md {
       display: block;
       padding: 0;
-      background-color: inherit; 
+      background-color: inherit;
     }
   }
 
@@ -80,33 +79,33 @@
     box-shadow: 0px 0px 0px 16px $alabaster inset;
     padding: space(24);
 
-    @include bp-md{
-     border-radius: 0;
-     background-color: inherit;
-     box-shadow: none;
-     padding: 0;
+    @include bp-md {
+      border-radius: 0;
+      background-color: inherit;
+      box-shadow: none;
+      padding: 0;
     }
   }
 
-  &--time{
+  &--time {
     border: 0;
     margin: 0;
-    padding: space(16) 0  0 0;
+    padding: space(16) 0 0 0;
     background-color: inherit;
-    
-    @include bp-md{
-      padding: space(24) 0  0 0;
+
+    @include bp-md {
+      padding: space(24) 0 0 0;
     }
 
-    &[open]{
-       .accordion--time__content{
-        &:after{
+    &[open] {
+      .accordion--time__content {
+        &:after {
           content: "\f077";
         }
       }
     }
 
-    &__content{
+    &__content {
       display: inline-flex;
       align-items: center;
       font-size: $font-body-xs;
@@ -114,10 +113,10 @@
       outline: none;
 
       &::-webkit-details-marker {
-        display: none
+        display: none;
       }
 
-      &:after{ 
+      &:after {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: 16px;
@@ -126,9 +125,9 @@
       }
     }
   }
-  &__section{
+  &__section {
     margin: 0 -15px;
-    @include bp-md{
+    @include bp-md {
       margin: 0;
     }
   }
