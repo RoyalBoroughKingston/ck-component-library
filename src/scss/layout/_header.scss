@@ -32,6 +32,7 @@
     position: relative;
     margin-top: space(64);
     color: $mercury;
+
     @include bp-md {
       height: 180px;
     }
@@ -47,19 +48,26 @@
       position: absolute;
       left: 0;
       top: -54px;
+
       @include bp-md {
         background: url(../..//assets/img/svg/backgrounds/service-header-shape.svg);
       }
     }
 
-    &:after {
+    &::after {
       @include bp-lg {
         content: url(../../assets/img/svg/trees/peurto-small.svg);
         position: absolute;
         top: 60px;
         right: 7%;
+        
+        //ie size fix
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          width: 33px;
+        }
       }
-      @include bp-xl{
+
+      @include bp-xl {
         top: 125px;
       }
     }
@@ -118,7 +126,7 @@
         height: 230px;
       }
 
-      @include bp-lg{
+      @include bp-lg {
         margin-top: -70px;
       }
     }
