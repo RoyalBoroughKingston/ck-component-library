@@ -117,7 +117,7 @@
     }
 
     &__img-wrapper {
-      width: 50px;
+      width: 100%;
 
       @include bp-md {
         margin-top: -60px;

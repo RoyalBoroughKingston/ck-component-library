@@ -95,7 +95,7 @@
     &__icon {
       display: flex;
       justify-content: center;
-      color: $elm;
+      color: $puerto-rico;
       font-size: 36px;
     }
 
@@ -105,6 +105,10 @@
 
     &__description {
       font-weight: $font-bold;
+    }
+
+    &__text {
+      color: $san-juan;
     }
 
     &--alt {
