@@ -138,7 +138,6 @@
   }
 
   &__form {
-
     &:before {
       @include bp-lg {
         content: url(../../assets/img/svg/trees/cranberry-lg.svg);
@@ -186,14 +185,14 @@
     }
 
     // Remove default list styling
-    li{
-      &::before{
+    li {
+      &::before {
         content: none;
       }
     }
 
     // ie fix
-    div{
+    div {
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         display: block;
       }
@@ -209,6 +208,6 @@
   }
 
   &__category {
-  margin-bottom: space(16);
+    margin-bottom: space(16);
   }
 }
