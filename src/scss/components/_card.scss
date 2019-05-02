@@ -240,6 +240,12 @@
     padding: space(48);
     color: $san-juan;
 
+    @include bp-lg{
+      background: url(../../assets/img/svg/backgrounds/service-card-lg-shape-extended.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
     &__title {
       padding-bottom: space(16);
     }
@@ -264,6 +270,13 @@
     background: $alabaster;
     border-radius: 17px;
     padding: space(24);
+
+    @include bp-lg{
+      background-color: transparent;
+      background: url(../../assets/img/svg/backgrounds/service-card-lg-shape.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
 
     &__img-wrapper {
       margin: 0 auto;

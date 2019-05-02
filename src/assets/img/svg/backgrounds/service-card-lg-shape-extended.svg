@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="930px" height="863px" viewBox="0 0 930 863" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>service-card-lg-shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="service-card-lg-shape" fill="#F8F8F8" fill-rule="nonzero">
+            <path d="M13.0825093,48.0286762 C26.2864319,-13.1693754 126.144311,1.55373984 418.005711,1.55373984 C603.438613,1.55373984 767.155797,2.05624637 909.157264,3.06125943 L909.157264,3.06125943 C920.688448,3.14286541 929.999864,14.2140475 929.999867,27.8429021 L930,838.217905 C930.000002,851.904677 920.612238,863 909.031842,863 C909.031841,863 909.03184,863 909.031839,863 L20.9681591,863 C9.38776462,863 0,851.904677 0,838.217905 C0,838.216608 1.23342126e-07,838.215296 2.46684253e-07,838.213999 C0.0648941155,351.546563 4.42573055,88.1514559 13.0825093,48.0286762 Z" id="path-1"></path>
+        </g>
+    </g>
+</svg>
