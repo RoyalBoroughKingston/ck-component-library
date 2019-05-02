@@ -109,4 +109,13 @@
   h6 {
     margin: space(24) 0;
   }
+
+  ul{
+    li{
+      &:first-child{
+        margin-left: -20px;
+        line-height: 2;
+      }
+    }
+  }
 }

@@ -248,20 +248,31 @@ p {
   }
 }
 
-ul {
+ul{
   list-style: none;
+  padding-inline-start: 20px;
+ 
+  li{
+    display: inline-block;
+    margin-right: space(24);
+    font-size: $font-body-m;
 
-  li {
-    @include body-l;
-    font-weight: $font-bold;
-    color: $san-juan;
+    @include bp-md{
+      margin-right: space(32);
+    }
+    &:first-child{ 
+      
+      &::before{
+        content: none;
+      }
+    }
 
-    &:before {
-      color: $lynch;
-      content: "\2022";
-      font-weight: bold;
+    &:before{
+      content: "\2022";  
+      color: $downy ;
+      font-weight: bold; 
       display: inline-block;
-      width: 1em;
+      width: 1em; 
       margin-left: -1em;
     }
   }
