@@ -20,7 +20,7 @@
   }
 
   @include bp-lg {
-   // margin-top: 160px;
+    // margin-top: 160px;
   }
 
   /* For adding trees only! */
@@ -35,6 +35,10 @@
 
       @include bp-xl {
         top: -29%;
+      }
+
+      @include bp-wide {
+        top: -26%;
       }
     }
   }
@@ -119,6 +123,10 @@
 
       @include bp-xl {
         top: -23%;
+      }
+
+      @include bp-wide {
+        top: -19%;
       }
     }
 
