@@ -94,6 +94,7 @@
 
 .content-block {
   margin: space(24) 0;
+  color: $san-juan; 
 
   @include bp-sm {
     background-color: $alabaster;
