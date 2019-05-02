@@ -39,6 +39,7 @@ $media-small: 768px;
 $media-medium: 960px;
 $media-large: 1120px;
 $media-xlarge: 1280px;
+$media-wide: 1440px;
 
 /* Media query mixins */
 @mixin bp-xs {
@@ -67,6 +68,12 @@ $media-xlarge: 1280px;
 
 @mixin bp-xl {
   @media (min-width: $media-xlarge) {
+    @content;
+  }
+}
+
+@mixin bp-wide {
+  @media (min-width: $media-wide) {
     @content;
   }
 }
