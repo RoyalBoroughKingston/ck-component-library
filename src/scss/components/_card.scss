@@ -127,6 +127,12 @@
     flex-wrap: wrap;
     padding: space(16) space(24) space(24) space(24);
 
+    //ie 10 fix
+    p {
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        max-width: 100%;
+      }
+    }
     @include bp-sm {
       background-image: url(../../assets/img/svg/backgrounds/service-quote-shape.svg);
       padding: space(40);
@@ -215,9 +221,17 @@
       display: flex;
       align-items: center;
       padding-bottom: space(40);
-
       &:last-child {
         padding-bottom: 0;
+      }
+
+      //ie 10 fix
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        div p {
+          display: block;
+          max-width: 800px;
+          flex-shrink: 1;
+        }
       }
     }
 
