@@ -101,8 +101,12 @@
 
       //ie size fix
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        right: 20% !important;
-        text-align: center;
+        top: -40px;
+        right: 50px;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(2deg);
       }
     }
   }
