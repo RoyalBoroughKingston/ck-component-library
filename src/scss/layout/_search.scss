@@ -57,7 +57,7 @@
     @include bp-lg {
       content: url(../../assets/img/svg/trees/hawkes-small.svg);
       position: absolute;
-      right: 10%;
+      left: 90%;
       top: 580px;
     }
     @include bp-xl {
@@ -142,7 +142,7 @@
       @include bp-lg {
         content: url(../../assets/img/svg/trees/cranberry-lg.svg);
         position: absolute;
-        right: 5%;
+        right: 0%;
         top: 580px;
         animation: sway 7s infinite;
         transform-origin: 50% 100% 0;

@@ -80,7 +80,7 @@
     display: flex;
     align-items: center;
 
-    @include bp-sm {
+    @include bp-md {
       border-radius: 25px;
     }
 

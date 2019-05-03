@@ -81,7 +81,8 @@
     height: 100%;
     width: 100%;
     background-color: rgba(70, 192, 176, 0.4);
-
+    border-radius: 0 17px 0 0;
+    
     &-icon {
       color: $white;
       font-size: 40px;
