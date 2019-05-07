@@ -32,7 +32,7 @@
     &--s{
       padding-left: space(8);
     }
-  }
+  } 
 
   &--s {
     font-size: $font-body-m;
@@ -42,11 +42,11 @@
 
   &--l {
     padding: space(24);
-    font-size: $font-body-s;
+    font-size: $font-button-s;
 
     @include bp-md {
       padding: space(24) space(40);
-      font-size: $font-button-s;
+      font-size: $font-button;
     }
   }
 

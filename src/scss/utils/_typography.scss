@@ -95,7 +95,7 @@ address {
   font-weight: $font-bold;
   line-height: 1.2;
 
-  @include bp-md{
+  @include bp-md {
     font-size: $font-heading-xl;
   }
 }
@@ -106,7 +106,7 @@ address {
   font-weight: $font-bold;
   line-height: 1.17;
 
-  @include bp-md{
+  @include bp-md {
     font-size: $font-heading-l;
   }
 }
@@ -116,8 +116,8 @@ address {
   font-family: $font-primary;
   font-weight: $font-bold;
   line-height: 1.13;
-  
-  @include bp-md{
+
+  @include bp-md {
     font-size: $font-heading-m;
   }
 }
@@ -137,12 +137,12 @@ address {
 }
 
 @mixin body-l {
-  font-size:  $font-body-s;
+  font-size: $font-body-s;
   font-family: $font-primary;
   font-weight: $font-regular;
   line-height: 1.25;
 
-  @include bp-md{
+  @include bp-md {
     font-size: $font-body-l;
   }
 }
@@ -159,8 +159,8 @@ address {
   font-family: $font-primary;
   font-weight: $font-regular;
   line-height: 1.25;
-  
-  @include bp-md{
+
+  @include bp-md {
     font-size: $font-body-s;
   }
 }
@@ -178,7 +178,7 @@ address {
   font-weight: $font-regular;
   line-height: 1;
 
-  @include bp-md{
+  @include bp-md {
     font-size: $font-body-alt;
   }
 }
@@ -217,17 +217,14 @@ h4 {
 h5,
 h6,
 a,
-button {
+button,
+p {
   @include body-m;
+  color: inherit;
 }
 
 figure {
   margin: 0;
-}
-
-p {
-  @include body-m;
-  color: inherit;
 }
 
 .body {
@@ -252,28 +249,27 @@ p {
   }
 }
 
-ul{
+ul {
   list-style: none;
   padding-inline-start: 20px;
- 
-  li{
+
+  li {
     display: inline-block;
     margin-right: space(24);
     font-size: $font-body-m;
 
-    &:first-child{ 
-      
-      &::before{
+    &:first-child {
+      &::before {
         content: none;
       }
     }
 
-    &:before{
-      content: "\2022";  
-      color: $downy ;
-      font-weight: bold; 
+    &:before {
+      content: "\2022";
+      color: $downy;
+      font-weight: bold;
       display: inline-block;
-      width: 1em; 
+      width: 1em;
       margin-left: -1em;
     }
   }
