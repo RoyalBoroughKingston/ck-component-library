@@ -156,7 +156,7 @@
   }
   /* Where can i access it card */
   &--access-it {
-    padding: space(32);
+    padding: space(24) space(16);
     background: $white;
     border-radius: 15px;
     display: flex;
@@ -165,6 +165,7 @@
     @include bp-md {
       background: $alabaster;
       box-shadow: none;
+      padding: space(32);
     }
 
     &__intro {
@@ -254,7 +255,7 @@
     }
 
     &__text {
-      color: $san-juan;
+      color: $lynch;
     }
   }
   /* How can i contact this group */
@@ -344,16 +345,16 @@
   /*Make connection*/
   &--make-connection {
     background-color: $pink;
-    border-radius: 17px;
     text-align: center;
     padding: space(24) 0;
     position: relative;
-    margin: space(24) 0;
-
+    margin: 0 -2rem;
+    
     @include bp-lg {
       margin: 0 0 space(24) 0;
       background-color: transparent;
       background-image: url(../../assets/img/svg/backgrounds/service-contact-group.svg);
+      border-radius: 17px;
     }
 
     &__icon {
@@ -370,10 +371,12 @@
     }
 
     &:before {
-      content: url(../../assets/img/svg/trees/iceberg-small.svg);
-      position: absolute;
-      top: -25px;
-      right: 8px;
+      @include bp-lg {
+        content: url(../../assets/img/svg/trees/iceberg-small.svg);
+        position: absolute;
+        top: -25px;
+        right: 8px;
+      }
     }
   }
   /*Related services*/
@@ -382,12 +385,12 @@
     border-radius: 17px;
     padding: space(24);
     margin-bottom: space(24);
-    height: 100%;
     display: flex;
     flex-direction: column;
-    
+
     @include bp-md {
       margin-bottom: 0;
+      height: 100%;
     }
 
     &__title {
@@ -400,7 +403,7 @@
       padding-bottom: space(32);
     }
 
-    &__footer{
+    &__footer {
       margin-top: auto;
     }
   }

@@ -95,9 +95,9 @@
     }
 
     @include bp-xl {
-      bottom: 97%;
+      bottom: 100%;
       right: 25%;
-      transform: rotate(0deg);
+      transform: rotate(2deg);
 
       //ie size fix
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -108,6 +108,11 @@
         margin: auto;
         transform: rotate(2deg);
       }
+    }
+
+    @include bp-wide{
+      bottom: 97%;
+      transform: rotate(1deg);
     }
   }
 
@@ -122,6 +127,11 @@
 
       @include bp-sm {
         top: -22%;
+        right: 5%;
+      }
+
+      @include bp-md {
+        top: -25%;
         right: 5%;
       }
 
@@ -183,7 +193,7 @@
   &__item {
     margin-right: space(16);
     font-size: $font-body-m;
-    
+
     &:last-child {
       margin-right: 0;
     }
