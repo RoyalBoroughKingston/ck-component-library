@@ -61,7 +61,7 @@
       top: 580px;
     }
     @include bp-xl {
-      top: 640px;
+      top: 648px;
     }
   }
 
@@ -70,7 +70,7 @@
     padding-top: space(64);
 
     @include bp-lg {
-      padding-top: 0;
+      padding: space(48) 0 space(80) 0;
     }
 
     @include bp-lg {
@@ -177,9 +177,10 @@
   }
 
   &__categories {
-    padding-bottom: space(64);
-
+    max-width: 100%;
     display: none;
+    padding-inline-start: 0;
+    padding: 0;
     @include bp-md {
       display: block;
     }
