@@ -117,7 +117,8 @@
   &__item {
     @include bp-lg {
       margin-right: space(32);
-
+      font-size: $font-body-m;
+      
       &:after {
         content: url(../../assets/img/svg/nav-hover.svg);
         position: absolute;
