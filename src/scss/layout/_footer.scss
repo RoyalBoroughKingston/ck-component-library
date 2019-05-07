@@ -163,11 +163,13 @@
   &__contact,
   &__feedback {
     padding-bottom: space(24);
+    font-size: $font-body-xs;
   }
 
   &__privacy {
     padding-bottom: space(24);
     display: block;
+    font-size: $font-body-xs;
 
     @include bp-sm {
       padding-bottom: 0;
@@ -180,7 +182,8 @@
 
   &__item {
     margin-right: space(16);
-
+    font-size: $font-body-m;
+    
     &:last-child {
       margin-right: 0;
     }
