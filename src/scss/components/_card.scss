@@ -130,6 +130,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-wrap: wrap;
     padding: space(16) space(24) space(24) space(24);
 
@@ -139,6 +140,7 @@
         max-width: 100%;
       }
     }
+
     @include bp-sm {
       border: 17px solid $san-juan;
       border-image: url(../../assets/img/svg/backgrounds/service-quote-shape.svg)
@@ -146,6 +148,7 @@
       padding: space(40);
       flex-wrap: nowrap;
       justify-content: space-between;
+      text-align: left;
     }
 
     @include bp-md {
