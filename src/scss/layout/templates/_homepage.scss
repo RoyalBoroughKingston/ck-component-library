@@ -14,6 +14,11 @@
       padding-bottom: space(40);
     }
 
+    @include bp-lg {
+      text-align: center;
+      padding-bottom: space(80);
+    }
+
     &__intro {
       padding-top: space(56);
       margin-bottom: space(64);
