@@ -81,6 +81,11 @@ blockquote {
 /* Remove underline */
 a {
   text-decoration: none;
+  
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 /* Remove italics */
