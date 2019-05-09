@@ -19,7 +19,7 @@
   }
 
   @include bp-lg {
-    background: url(../../assets/img/svg/backgrounds/home-search-shape.svg)
+    background: url(../../assets/img/svg/backgrounds/home-search-shape-lg.svg)
       no-repeat;
     background-size: 110% 100%;
     background-position: 50%;
@@ -27,6 +27,8 @@
   }
 
   @include bp-xl {
+    background: url(../../assets/img/svg/backgrounds/home-search-shape.svg)
+    no-repeat;
     background-size: 100% 100%;
     padding: space(64) space(112);
   }
