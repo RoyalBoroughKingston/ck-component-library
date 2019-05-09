@@ -123,9 +123,9 @@
   }
   /* What people say */
   &--what-people-say {
-    background-image: url(../../assets/img/svg/backgrounds/service-quote-shape-mobile.svg);
-    background-position: center;
-    background-size: contain;
+    border: 25px solid $san-juan;
+    border-image: url(../../assets/img/svg/backgrounds/service-quote-shape-mobile.svg)
+      60 round;
     color: $san-juan;
     display: flex;
     justify-content: center;
@@ -140,10 +140,24 @@
       }
     }
     @include bp-sm {
-      background-image: url(../../assets/img/svg/backgrounds/service-quote-shape.svg);
+      border: 17px solid $san-juan;
+      border-image: url(../../assets/img/svg/backgrounds/service-quote-shape.svg)
+        25 round;
       padding: space(40);
       flex-wrap: nowrap;
       justify-content: space-between;
+    }
+
+    @include bp-md {
+      border: 19px solid $san-juan;
+      border-image: url(../../assets/img/svg/backgrounds/service-quote-shape.svg)
+        25 round;
+    }
+
+    @include bp-lg {
+      border: 20px solid $san-juan;
+      border-image: url(../../assets/img/svg/backgrounds/service-quote-shape.svg)
+        25 round;
     }
 
     &__icon {
@@ -349,7 +363,7 @@
     padding: space(24) 0;
     position: relative;
     margin: 0 -2rem;
-    
+
     @include bp-lg {
       margin: 0 0 space(24) 0;
       background-color: transparent;
